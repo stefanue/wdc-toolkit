@@ -30,7 +30,7 @@ Then install the 10up Stylelint config:
 
 ```bash
 // NPM
-npm install @wdc/stylelint-config --save-dev
+npm install @wdcthemes/stylelint-config --save-dev
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ Add the following to your `.stylelintrc` file:
 ```js
 {
   "extends": [
-    "@wdc/stylelint-config"
+    "@wdcthemes/stylelint-config"
   ]
 }
 
@@ -63,7 +63,7 @@ You will then need to update the plugins section of your projects `.stylelintrc`
 {
   "extends": [
     "stylelint-config-standard-scss",
-    "@wdc/stylelint-config/scss"
+    "@wdcthemes/stylelint-config/scss"
   ]
 }
 ```

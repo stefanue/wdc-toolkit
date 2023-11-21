@@ -69,7 +69,7 @@ describe('webpack.config.js', () => {
 	it('returns proper configs for package config', () => {
 		getBuildFilesMock.mockReturnValue({});
 		getPackageMock.mockReturnValue({
-			name: '@wdc/component-library',
+			name: '@wdcthemes/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',
@@ -93,7 +93,7 @@ describe('webpack.config.js', () => {
 		process.argv.push('--format=commonjs');
 		getBuildFilesMock.mockReturnValue({});
 		getPackageMock.mockReturnValue({
-			name: '@wdc/component-library',
+			name: '@wdcthemes/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',
@@ -117,7 +117,7 @@ describe('webpack.config.js', () => {
 	it('returns proper configs for package config with peer deps', () => {
 		getBuildFilesMock.mockReturnValue({});
 		getPackageMock.mockReturnValue({
-			name: '@wdc/component-library',
+			name: '@wdcthemes/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',
@@ -144,7 +144,7 @@ describe('webpack.config.js', () => {
 		hasProjectFileMock.mockReturnValue(true);
 		getBuildFilesMock.mockReturnValue({});
 		getPackageMock.mockReturnValue({
-			name: '@wdc/component-library',
+			name: '@wdcthemes/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',

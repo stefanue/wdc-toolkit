@@ -65,14 +65,14 @@
         "webpackbar": "^5.0.2"
     },
     "devDependencies": {
-        "@wdc/babel-preset-default": "^2.1.0",
-        "@wdc/eslint-config": "^3.1.1",
-        "@wdc/stylelint-config": "^3.0.0"
+        "@wdcthemes/babel-preset-default": "^2.1.0",
+        "@wdcthemes/eslint-config": "^3.1.1",
+        "@wdcthemes/stylelint-config": "^2.0.5"
     },
     "peerDependencies": {
-        "@wdc/babel-preset-default": "^2.0.4",
-        "@wdc/eslint-config": "^3.1.1",
-        "@wdc/stylelint-config": ">=2.0.5-next.0",
+        "@wdcthemes/babel-preset-default": "^2.1.0",
+        "@wdcthemes/eslint-config": "^3.1.1",
+        "@wdcthemes/stylelint-config": "^2.0.5",
         "@linaria/webpack-loader": ">=4.1.11",
         "@linaria/babel-preset": ">=4.3.3"
     },

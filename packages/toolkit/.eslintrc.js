@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ['@wdc/eslint-config/node', '@wdc/eslint-config/jest'],
+	extends: ['@wdcthemes/eslint-config/node', '@wdcthemes/eslint-config/jest'],
 	rules: {
 		'global-require': 'off',
 		'import/no-dynamic-require': 'off',

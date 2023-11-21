@@ -1,5 +1,5 @@
 {
-    "name": "@wdc/eslint-plugin",
+    "name": "@wdcthemes/eslint-plugin",
     "version": "2.0.0",
     "description": "ESLint plugin for WordPress development.",
     "author": "Stefan Vasiljevic",
@@ -45,8 +45,8 @@
         "requireindex": "^1.2.0"
     },
     "devDependencies": {
-        "@wdc/babel-preset-default": "^2.0.4",
-        "@wdc/eslint-config": "^3.1.1-next.0"
+        "@wdcthemes/babel-preset-default": "^2.1.0",
+        "@wdcthemes/eslint-config": "^3.1.1"
     },
     "peerDependencies": {
         "@babel/core": ">=7",
