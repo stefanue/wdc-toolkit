@@ -8,32 +8,32 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  build:
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
+      - name: Checkout Repo
+        uses: actions/checkout@v2
 
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@v2
         with:
-          node-version: 16
-          registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm publish
+          node-version: 16.x
+
+      - name: Install Dependencies
+        run: npm ci
+      - name: Enter pre next
+        run: |
+          [[ ! -f .changeset/pre.json ]] && npx changeset pre enter next || echo 'already in pre mode'
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          # This expects you to have a script called release which does a build for your packages and calls changeset publish
+          publish: npx changeset publish
+          title: "Release"
+          commit: "chore: version packages (next)"
+          createGithubReleases: true
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
