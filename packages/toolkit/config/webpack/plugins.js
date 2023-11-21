@@ -11,7 +11,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const { resolve } = require('path');
 const RemoveEmptyScriptsPlugin = require('./plugins/remove-empty-scripts');
 const CleanExtractedDeps = require('./plugins/clean-extracted-deps');
-const TenUpToolkitTscPlugin = require('./plugins/tsc');
+const WDCToolkitTscPlugin = require('./plugins/tsc');
 const NoBrowserSyncPlugin = require('./plugins/no-browser-sync');
 
 const {
@@ -87,9 +87,9 @@ module.exports = ({
 
 	return [
 		devServer &&
-			new HtmlWebpackPlugin({
-				...(hasProjectFile('public/index.html') && { template: 'public/index.html' }),
-			}),
+		new HtmlWebpackPlugin({
+			...(hasProjectFile('public/index.html') && { template: 'public/index.html' }),
+		}),
 		new ESLintPlugin({
 			failOnError: false,
 			fix: false,
@@ -125,9 +125,9 @@ module.exports = ({
 
 					return fullPath
 						? !path
-								.relative(blocksSourceDirectory, fullPath)
-								// startWith('../') but in a cross-env way
-								.startsWith(path.join('..', '/'))
+							.relative(blocksSourceDirectory, fullPath)
+							// startWith('../') but in a cross-env way
+							.startsWith(path.join('..', '/'))
 						: false;
 				});
 
@@ -148,38 +148,38 @@ module.exports = ({
 		}),
 
 		!isPackage &&
-			// Copy static assets to the `dist` folder.
-			new CopyWebpackPlugin({
-				patterns: [
-					{
-						from: '**/*.{jpg,jpeg,png,gif,webp,avif,ico,svg,eot,ttf,woff,woff2,otf}',
-						to: '[path][name][ext]',
-						noErrorOnMissing: true,
-						context: path.resolve(process.cwd(), paths.copyAssetsDir),
+		// Copy static assets to the `dist` folder.
+		new CopyWebpackPlugin({
+			patterns: [
+				{
+					from: '**/*.{jpg,jpeg,png,gif,webp,avif,ico,svg,eot,ttf,woff,woff2,otf}',
+					to: '[path][name][ext]',
+					noErrorOnMissing: true,
+					context: path.resolve(process.cwd(), paths.copyAssetsDir),
+				},
+				useBlockAssets && {
+					from: path.join(blocksSourceDirectory, '**/block.json').replace(/\\/g, '/'),
+					context: blocksSourceDirectory,
+					noErrorOnMissing: true,
+					to: 'blocks/[path][name][ext]',
+					transform: (content, absoluteFilename) => {
+						return maybeInsertStyleVersionHash(content, absoluteFilename);
 					},
-					useBlockAssets && {
-						from: path.join(blocksSourceDirectory, '**/block.json').replace(/\\/g, '/'),
-						context: blocksSourceDirectory,
-						noErrorOnMissing: true,
-						to: 'blocks/[path][name][ext]',
-						transform: (content, absoluteFilename) => {
-							return maybeInsertStyleVersionHash(content, absoluteFilename);
-						},
-					},
-					useBlockAssets && {
-						from: path.join(blocksSourceDirectory, '**/*.php').replace(/\\/g, '/'),
-						context: blocksSourceDirectory,
-						noErrorOnMissing: true,
-						to: 'blocks/[path][name][ext]',
-					},
-					hasReactFastRefresh && {
-						from: fromConfigRoot('fast-refresh.php'),
-						to: '[path][name][ext]',
-						noErrorOnMissing: true,
-						context: path.resolve(process.cwd(), '/dist'),
-					},
-				].filter(Boolean),
-			}),
+				},
+				useBlockAssets && {
+					from: path.join(blocksSourceDirectory, '**/*.php').replace(/\\/g, '/'),
+					context: blocksSourceDirectory,
+					noErrorOnMissing: true,
+					to: 'blocks/[path][name][ext]',
+				},
+				hasReactFastRefresh && {
+					from: fromConfigRoot('fast-refresh.php'),
+					to: '[path][name][ext]',
+					noErrorOnMissing: true,
+					context: path.resolve(process.cwd(), '/dist'),
+				},
+			].filter(Boolean),
+		}),
 		devURL && browserSync,
 		// Lint CSS.
 		new StyleLintPlugin({
@@ -197,25 +197,25 @@ module.exports = ({
 		// dependencyExternals variable controls whether scripts' assets get
 		// generated, and the default externals set.
 		wpDependencyExternals &&
-			!isPackage &&
-			new DependencyExtractionWebpackPlugin({
-				injectPolyfill: false,
-				requestToHandle: (request) => {
-					if (request.includes('react-refresh/runtime')) {
-						return 'tenup-toolkit-react-refresh-runtime';
-					}
+		!isPackage &&
+		new DependencyExtractionWebpackPlugin({
+			injectPolyfill: false,
+			requestToHandle: (request) => {
+				if (request.includes('react-refresh/runtime')) {
+					return 'wdc-toolkit-react-refresh-runtime';
+				}
 
-					return undefined;
-				},
-			}),
+				return undefined;
+			},
+		}),
 		new CleanExtractedDeps(),
 		new RemoveEmptyScriptsPlugin(),
-		new TenUpToolkitTscPlugin(),
+		new WDCToolkitTscPlugin(),
 		analyze && isProduction && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
 		hasReactFastRefresh &&
-			new ReactRefreshWebpackPlugin({
-				overlay: { sockHost: '127.0.0.1', sockProtocol: 'ws', sockPort: devServerPort },
-				exclude: [/node_module/, /outputCssLoader\.js/],
-			}),
+		new ReactRefreshWebpackPlugin({
+			overlay: { sockHost: '127.0.0.1', sockProtocol: 'ws', sockPort: devServerPort },
+			exclude: [/node_module/, /outputCssLoader\.js/],
+		}),
 	].filter(Boolean);
 };

@@ -210,7 +210,7 @@ Object {
     DependencyExtractionWebpackPlugin: {"combineAssets":false,"combinedOutputFile":null,"externalizedReport":false,"injectPolyfill":false,"outputFormat":"php","outputFilename":null,"useDefaults":true},
     CleanExtractedDeps: {},
     WebpackRemoveEmptyScriptsPlugin: {"enabled":true,"verbose":false,"extensions":{},"ignore":[],"remove":{}},
-    TenUpToolkitTscPlugin: {},
+    WDCToolkitTscPlugin: {},
     ReactRefreshPlugin: {"overlay":{"sockHost":"127.0.0.1","sockProtocol":"ws","sockPort":8000,"entry":"/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ErrorOverlayEntry.js","module":"/node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js","sockIntegration":"wds"},"exclude":[{},{}],"include":{}},
   ],
   "resolve": Object {

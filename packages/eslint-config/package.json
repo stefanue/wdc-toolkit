@@ -35,7 +35,7 @@
     "keywords": [
         "eslint",
         "eslint-config",
-        "10up"
+        "wdc"
     ],
     "dependencies": {
         "@wdcthemes/babel-preset-default": "^2.1.0"

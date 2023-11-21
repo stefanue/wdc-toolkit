@@ -52,7 +52,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 2.4.3
 
-- Reverted - 10up's eslint plugin
+- Reverted - eslint plugin
 
 ## 2.4.0
 
@@ -78,7 +78,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 2.3.2
 
-- Disables eslint fixer for `jsdoc/require-param` due to a [bug](https://github.com/10up/10up-scripts/issues/17) with vscode where it would add duplicated params.
+- Disables eslint fixer for `jsdoc/require-param` due to a bug
 
 ## 2.3.1
 

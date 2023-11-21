@@ -1,7 +1,5 @@
-# 10up babel preset
-Babel preset for transforming JavaScript at 10up.
-
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
+# WDC babel preset
+Babel preset for transforming JavaScript.
 
 ## Instalation
 
@@ -75,11 +73,3 @@ The appropriate `core-js` polyfills will be added automatically for those browse
 
 ### options.development
 You can set this flag to enable or disable development mode, however, this preset will automatically detect that based on how it was loaded by the caller (e.g webpack).
-
-## Support Level
-
-**Active:** 10up is actively working on this, and we expect to continue work for the foreseeable future. Bug reports, feature requests, questions, and pull requests are welcome.
-
-## Like what you see?
-
-<a href="http://10up.com/contact/"><img src="https://10up.com/uploads/2016/10/10up-Github-Banner.png" width="850"></a>

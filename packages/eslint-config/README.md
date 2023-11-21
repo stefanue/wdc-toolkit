@@ -1,14 +1,9 @@
-# 10up Eslint Config
+# WDC Eslint Config
 
-> ESLint [shareable config](https://github.com/10up/eslint-config)
-
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
-
-[@wdcthemes/eslint-config](https://github.com/10up/eslint-config) is a shareable configuration package for [eslint](http://eslint.org) built on top of [eslint-airbnb-config](https://github.com/airbnb/javascript) and modified to meet 10up's own standards.
 
 ## Installation
 
-Install [@wdcthemes/eslint-config](https://github.com/10up/eslint-config) as a development dependency of your project:
+Install [@wdcthemes/eslint-config](https://github.com/stefanue/wdc-toolkit/blob/master/packages/eslint-config/README.md) as a development dependency of your project:
 
 ```sh
 npm install @wdcthemes/eslint-config --save-dev
@@ -137,11 +132,3 @@ We recommend turning on VSCode settings to automatically run `eslint --fix` on s
 ```
 
 This will automagically format your code once you save. You don't need VSCode prettier extension enabled or running on save as eslint will automatically run `prettier` for you.
-
-## Support Level
-
-**Active:** 10up is actively working on this, and we expect to continue work for the foreseeable future including keeping tested up to the most recent version of WordPress.  Bug reports, feature requests, questions, and pull requests are welcome.
-
-## Like what you see?
-
-<a href="http://10up.com/contact/"><img src="https://10up.com/uploads/2016/10/10up-Github-Banner.png" width="850"></a>

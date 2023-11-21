@@ -118,11 +118,11 @@ const getDefaultConfig = () => {
 		devServerPort,
 		analyze,
 		hot,
-		// true by default (if TENUP_NO_EXTERNALS is not set)
-		// if TENUP_NO_EXTERNALS is truthy then dependencyExternals is false
+		// true by default (if WDC_NO_EXTERNALS is not set)
+		// if WDC_NO_EXTERNALS is truthy then dependencyExternals is false
 		wpDependencyExternals:
-			typeof process.env.TENUP_NO_EXTERNALS === 'undefined' ||
-			!process.env.TENUP_NO_EXTERNALS,
+			typeof process.env.WDC_NO_EXTERNALS === 'undefined' ||
+			!process.env.WDC_NO_EXTERNALS,
 		publicPath: process.env.ASSET_PATH || '/',
 		useBlockAssets: true,
 		include,
@@ -130,11 +130,11 @@ const getDefaultConfig = () => {
 };
 
 /**
- * Returns 10up-scripts config from package.json with default values
+ * Returns wdc-scripts config from package.json with default values
  *
  * @returns {object}
  */
-const getTenUpScriptsConfig = () => {
+const getWDCScriptsConfig = () => {
 	const packageJson = getPackage();
 	const config = packageJson['wdc-toolkit'] || packageJson['@wdcthemes/scripts'];
 	const defaultConfig = getDefaultConfig();
@@ -202,9 +202,9 @@ const normalizePackageType = (type) => {
  *
  * @returns {object | boolean}
  */
-const getTenUpScriptsPackageBuildConfig = () => {
+const getWDCScriptsPackageBuildConfig = () => {
 	const packageJson = getPackage();
-	const config = getTenUpScriptsConfig();
+	const config = getWDCScriptsConfig();
 	const { name = 'default-package', style } = packageJson;
 	const packageType = normalizePackageType(
 		getArgFromCLI('-f') || getArgFromCLI('--format') || config.packageType || 'all',
@@ -260,7 +260,7 @@ const getTenUpScriptsPackageBuildConfig = () => {
 };
 
 const getBuildFiles = () => {
-	const { entry } = getTenUpScriptsConfig();
+	const { entry } = getWDCScriptsConfig();
 
 	const entries = {};
 
@@ -285,9 +285,9 @@ module.exports = {
 	getBuildFiles,
 	hasEslintignoreConfig,
 	hasEslintConfig,
-	getTenUpScriptsConfig,
+	getWDCScriptsConfig,
 	getDefaultConfig,
-	getTenUpScriptsPackageBuildConfig,
+	getWDCScriptsPackageBuildConfig,
 	hasWebpackConfig,
 	hasTsConfig,
 };

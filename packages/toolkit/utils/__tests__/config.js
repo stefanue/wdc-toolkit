@@ -1,7 +1,7 @@
 import {
 	getDefaultConfig,
-	getTenUpScriptsConfig,
-	getTenUpScriptsPackageBuildConfig,
+	getWDCScriptsConfig,
+	getWDCScriptsPackageBuildConfig,
 } from '../config';
 import { getPackage as getPackageMock } from '../package';
 
@@ -13,7 +13,7 @@ jest.mock('../package', () => {
 	return module;
 });
 
-describe('getTenUpScriptsConfig', () => {
+describe('getWDCScriptsConfig', () => {
 	afterEach(() => {
 		getPackageMock.mockReset();
 	});
@@ -21,7 +21,7 @@ describe('getTenUpScriptsConfig', () => {
 	it('returns defaults values if config is not set', () => {
 		getPackageMock.mockReturnValueOnce({});
 
-		expect(getTenUpScriptsConfig()).toEqual(getDefaultConfig());
+		expect(getWDCScriptsConfig()).toEqual(getDefaultConfig());
 	});
 
 	it('overrides and merges config properly', () => {
@@ -41,7 +41,7 @@ describe('getTenUpScriptsConfig', () => {
 
 		const defaultConfig = getDefaultConfig();
 
-		expect(getTenUpScriptsConfig()).toEqual({
+		expect(getWDCScriptsConfig()).toEqual({
 			...defaultConfig,
 			entry: {
 				'entry1.js': 'dist/output.js',
@@ -58,7 +58,7 @@ describe('getTenUpScriptsConfig', () => {
 	});
 });
 
-describe('getTenUpScriptsPackageBuildConfig', () => {
+describe('getWDCScriptsPackageBuildConfig', () => {
 	afterEach(() => {
 		getPackageMock.mockReset();
 	});
@@ -76,7 +76,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 			},
 		});
 
-		expect(getTenUpScriptsPackageBuildConfig()).toEqual({
+		expect(getWDCScriptsPackageBuildConfig()).toEqual({
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			umd: 'dist/index.umd.js',
@@ -109,7 +109,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 			},
 		});
 
-		expect(getTenUpScriptsPackageBuildConfig()).toEqual({
+		expect(getWDCScriptsPackageBuildConfig()).toEqual({
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			umd: 'dist/index.umd.js',
@@ -144,7 +144,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 			},
 		});
 
-		expect(getTenUpScriptsPackageBuildConfig()).toEqual({
+		expect(getWDCScriptsPackageBuildConfig()).toEqual({
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			umd: false,
@@ -174,7 +174,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 		// override the definated packageType
 		process.argv.push('--format=commonjs');
 
-		expect(getTenUpScriptsPackageBuildConfig()).toEqual({
+		expect(getWDCScriptsPackageBuildConfig()).toEqual({
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			umd: false,
@@ -188,7 +188,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 		process.argv.pop();
 		process.argv.push('-f=commonjs');
 
-		expect(getTenUpScriptsPackageBuildConfig()).toEqual({
+		expect(getWDCScriptsPackageBuildConfig()).toEqual({
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			umd: false,
@@ -204,7 +204,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 		process.argv.push('--name=ComponentLibrary');
 		process.argv.push('--target=node');
 
-		expect(getTenUpScriptsPackageBuildConfig()).toEqual({
+		expect(getWDCScriptsPackageBuildConfig()).toEqual({
 			source: 'src/index.umd.js',
 			main: 'dist/index.umd.js',
 			umd: false,

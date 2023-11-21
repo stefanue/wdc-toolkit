@@ -283,7 +283,7 @@ Object {
     WebpackBarPlugin: {"name":"webpack","color":"green","reporters":["basic"],"reporter":null},
     CleanExtractedDeps: {},
     WebpackRemoveEmptyScriptsPlugin: {"enabled":true,"verbose":false,"extensions":{},"ignore":[],"remove":{}},
-    TenUpToolkitTscPlugin: {},
+    WDCToolkitTscPlugin: {},
   ],
   "resolve": Object {
     "alias": Object {
@@ -498,7 +498,7 @@ Object {
     DependencyExtractionWebpackPlugin: {"combineAssets":false,"combinedOutputFile":null,"externalizedReport":false,"injectPolyfill":false,"outputFormat":"php","outputFilename":null,"useDefaults":true},
     CleanExtractedDeps: {},
     WebpackRemoveEmptyScriptsPlugin: {"enabled":true,"verbose":false,"extensions":{},"ignore":[],"remove":{}},
-    TenUpToolkitTscPlugin: {},
+    WDCToolkitTscPlugin: {},
   ],
   "resolve": Object {
     "alias": Object {
@@ -712,7 +712,7 @@ Object {
     DependencyExtractionWebpackPlugin: {"combineAssets":false,"combinedOutputFile":null,"externalizedReport":false,"injectPolyfill":false,"outputFormat":"php","outputFilename":null,"useDefaults":true},
     CleanExtractedDeps: {},
     WebpackRemoveEmptyScriptsPlugin: {"enabled":true,"verbose":false,"extensions":{},"ignore":[],"remove":{}},
-    TenUpToolkitTscPlugin: {},
+    WDCToolkitTscPlugin: {},
     BundleAnalyzerPlugin: {},
   ],
   "resolve": Object {
@@ -927,7 +927,7 @@ Object {
     DependencyExtractionWebpackPlugin: {"combineAssets":false,"combinedOutputFile":null,"externalizedReport":false,"injectPolyfill":false,"outputFormat":"php","outputFilename":null,"useDefaults":true},
     CleanExtractedDeps: {},
     WebpackRemoveEmptyScriptsPlugin: {"enabled":true,"verbose":false,"extensions":{},"ignore":[],"remove":{}},
-    TenUpToolkitTscPlugin: {},
+    WDCToolkitTscPlugin: {},
   ],
   "resolve": Object {
     "alias": Object {
@@ -1233,7 +1233,7 @@ Object {
     WebpackBarPlugin: {"name":"webpack","color":"green","reporters":["basic"],"reporter":null},
     CleanExtractedDeps: {},
     WebpackRemoveEmptyScriptsPlugin: {"enabled":true,"verbose":false,"extensions":{},"ignore":[],"remove":{}},
-    TenUpToolkitTscPlugin: {},
+    WDCToolkitTscPlugin: {},
   ],
   "resolve": Object {
     "alias": Object {
@@ -1539,7 +1539,7 @@ Object {
     WebpackBarPlugin: {"name":"webpack","color":"green","reporters":["basic"],"reporter":null},
     CleanExtractedDeps: {},
     WebpackRemoveEmptyScriptsPlugin: {"enabled":true,"verbose":false,"extensions":{},"ignore":[],"remove":{}},
-    TenUpToolkitTscPlugin: {},
+    WDCToolkitTscPlugin: {},
   ],
   "resolve": Object {
     "alias": Object {

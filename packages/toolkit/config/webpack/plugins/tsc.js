@@ -2,10 +2,10 @@ const spawn = require('cross-spawn');
 const { sync: resolveBin } = require('resolve-bin');
 const { hasTsConfig, fromProjectRoot } = require('../../../utils');
 
-class TenUpToolkitTscPlugin {
+class WDCToolkitTscPlugin {
 	apply(compiler) {
-		compiler.hooks.done.tap('TenUpToolkitTscPlugin', ({ compilation }) => {
-			const logger = compilation.getLogger('TenUpToolkitTscPlugin');
+		compiler.hooks.done.tap('WDCToolkitTscPlugin', ({ compilation }) => {
+			const logger = compilation.getLogger('WDCToolkitTscPlugin');
 			if (hasTsConfig()) {
 				logger.info('tsconfig.json detected, running tsc');
 				const result = spawn.sync(
@@ -28,4 +28,4 @@ class TenUpToolkitTscPlugin {
 	}
 }
 
-module.exports = TenUpToolkitTscPlugin;
+module.exports = WDCToolkitTscPlugin;
