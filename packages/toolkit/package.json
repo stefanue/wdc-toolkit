@@ -70,9 +70,9 @@
         "@wdc/stylelint-config": "^2.0.5"
     },
     "peerDependencies": {
-        "@wdc/babel-preset-default": "^2.0.4",
+        "@wdc/babel-preset-default": "^2.1.0",
         "@wdc/eslint-config": "^3.1.1",
-        "@wdc/stylelint-config": ">=2.0.5-next.0",
+        "@wdc/stylelint-config": "^2.0.5",
         "@linaria/webpack-loader": ">=4.1.11",
         "@linaria/babel-preset": ">=4.3.3"
     },

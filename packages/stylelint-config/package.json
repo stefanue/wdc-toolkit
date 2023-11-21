@@ -19,8 +19,7 @@
         "stylelint",
         "stylelint-config",
         "wordpress",
-        "coding-standards",
-        "10up"
+        "coding-standards"
     ],
     "files": [
         "index.js",
