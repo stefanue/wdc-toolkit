@@ -6,16 +6,16 @@ Babel preset for transforming JavaScript at 10up.
 ## Instalation
 
 ```sh
-npm install --save-dev @10up/babel-preset-default
+npm install --save-dev @wdc/babel-preset-default
 ```
 
 ## Usage
 
-Simply add `@10up/babel-preset-default` to your `.babelrc` file
+Simply add `@wdc/babel-preset-default` to your `.babelrc` file
 ```json
 // .babelrc
 {
-    "presets": [ "@10up/babel-preset-default"]
+    "presets": [ "@wdc/babel-preset-default"]
 }
 ```
 
@@ -26,7 +26,7 @@ This babel preset exposes a few options. The default options are listed below.
 // .babelrc
 {
     "presets": [
-        ["@10up/babel-preset-default", {
+        ["@wdc/babel-preset-default", {
             "modules": "auto",
             // defaults to true if modules is false and false otherwise.
             "runtimeESModules": false,

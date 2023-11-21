@@ -4,5 +4,5 @@
 const babelJest = require('babel-jest');
 
 module.exports = babelJest.default.createTransformer({
-	presets: [[require.resolve('@10up/babel-preset-default'), { wordpress: true }]],
+	presets: [[require.resolve('@wdc/babel-preset-default'), { wordpress: true }]],
 });

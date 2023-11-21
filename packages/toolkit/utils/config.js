@@ -136,7 +136,7 @@ const getDefaultConfig = () => {
  */
 const getTenUpScriptsConfig = () => {
 	const packageJson = getPackage();
-	const config = packageJson['wdc-toolkit'] || packageJson['@10up/scripts'];
+	const config = packageJson['wdc-toolkit'] || packageJson['@wdc/scripts'];
 	const defaultConfig = getDefaultConfig();
 
 	if (!config) {

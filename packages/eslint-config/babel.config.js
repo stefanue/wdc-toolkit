@@ -1,3 +1,3 @@
 module.exports = {
-	presets: ['@10up/babel-preset-default'],
+	presets: ['@wdc/babel-preset-default'],
 };

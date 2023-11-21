@@ -26,12 +26,7 @@
         "index.js",
         "scss.js"
     ],
-    "author": {
-        "name": "10up",
-        "email": "info@10up.com",
-        "url": "https://10up.com",
-        "role": "developer"
-    },
+    "author": "Stefan Vasiljevic",
     "license": "GPL-2.0-or-later",
     "bugs": {
         "url": "https://github.com/stefanue/wdc-toolkit/issues"
@@ -41,7 +36,7 @@
         "node": "^16.0.0 || ^18.0.0 || ^20.0.0"
     },
     "devDependencies": {
-        "@10up/eslint-config": "^3.1.1"
+        "@wdc/eslint-config": "^3.1.1"
     },
     "peerDependencies": {
         "stylelint": "^15.0.0"

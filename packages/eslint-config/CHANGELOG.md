@@ -22,7 +22,7 @@
 ### Patch Changes
 
 - Updated dependencies [f3122e4]
-  - @10up/babel-preset-default@2.1.0
+  - @wdc/babel-preset-default@2.1.0
 
 ## 3.0.0
 
@@ -36,13 +36,13 @@
 
 - 010cea6: Updating package.json links to point to the new repository
 - Updated dependencies [010cea6]
-  - @10up/babel-preset-default@2.0.4
+  - @wdc/babel-preset-default@2.0.4
 
 ## 2.4.6
 
 ### Patch Changes
 
-- @10up/babel-preset-default@2.0.3
+- @wdc/babel-preset-default@2.0.3
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
@@ -69,7 +69,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 2.3.4
 
-- Treats @wordpress packages as core-modules in `@10up/eslint-config/wordpress`.
+- Treats @wordpress packages as core-modules in `@wdc/eslint-config/wordpress`.
 - Uses `'@typescript-eslint/no-use-before-define` instead of eslint `no-use-before-define` for typescript files.
 
 ## 2.3.3

@@ -4,43 +4,43 @@
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 
-[@10up/eslint-config](https://github.com/10up/eslint-config) is a shareable configuration package for [eslint](http://eslint.org) built on top of [eslint-airbnb-config](https://github.com/airbnb/javascript) and modified to meet 10up's own standards.
+[@wdc/eslint-config](https://github.com/10up/eslint-config) is a shareable configuration package for [eslint](http://eslint.org) built on top of [eslint-airbnb-config](https://github.com/airbnb/javascript) and modified to meet 10up's own standards.
 
 ## Installation
 
-Install [@10up/eslint-config](https://github.com/10up/eslint-config) as a development dependency of your project:
+Install [@wdc/eslint-config](https://github.com/10up/eslint-config) as a development dependency of your project:
 
 ```sh
-npm install @10up/eslint-config --save-dev
+npm install @wdc/eslint-config --save-dev
 ```
 
 ## Available ESLint configs
 
-### @10up/eslint-config
+### @wdc/eslint-config
 
 The default export contains common rules that are not specific to any framework or environment.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@10up/eslint-config'],
+	extends: ['@wdc/eslint-config'],
 };
 ```
 
-### @10up/eslint-config/react
+### @wdc/eslint-config/react
 
-Extends `@10up/eslint-config` adding specific rules to React.
+Extends `@wdc/eslint-config` adding specific rules to React.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@10up/eslint-config/react'],
+	extends: ['@wdc/eslint-config/react'],
 };
 ```
 
-### @10up/eslint-config/wordpress
+### @wdc/eslint-config/wordpress
 
-Extends `@10up/eslint-config/react` adding the custom gutenberg rules from `@wordpress/eslint-plugin`.
+Extends `@wdc/eslint-config/react` adding the custom gutenberg rules from `@wordpress/eslint-plugin`.
 
 *Note*: This is an optional dependency, if you want to use this set of rules you must install `@wordpress/eslint-plugin` first.
 
@@ -51,40 +51,40 @@ npm install --save-dev @wordpress/eslint-plugin
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@10up/eslint-config/wordpress'],
+	extends: ['@wdc/eslint-config/wordpress'],
 };
 ```
 
-### @10up/eslint-config/node
+### @wdc/eslint-config/node
 
-Extends `@10up/eslint-config` adding specific rules to Node.js.
+Extends `@wdc/eslint-config` adding specific rules to Node.js.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@10up/eslint-config/node'],
+	extends: ['@wdc/eslint-config/node'],
 };
 ```
 
-### @10up/eslint-config/jest
+### @wdc/eslint-config/jest
 
 Adds specific rules for the `jest` testing framework.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@10up/eslint-config/react', '@10up/eslint-config/jest'],
+	extends: ['@wdc/eslint-config/react', '@wdc/eslint-config/jest'],
 };
 ```
 
-### @10up/eslint-config/legacy
+### @wdc/eslint-config/legacy
 
 This legacy config contains only rules for ES5. It should be used for projects without babel that are still writing legacy JavaScript code.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@10up/eslint-config/legacy'],
+	extends: ['@wdc/eslint-config/legacy'],
 };
 ```
 
@@ -95,7 +95,7 @@ In order to use this config, choose the one you want and add this configuration 
 ```json
 {
     "eslintConfig": {
-        "extends": "@10up/eslint-config"
+        "extends": "@wdc/eslint-config"
     }
 }
 ```
@@ -103,7 +103,7 @@ In order to use this config, choose the one you want and add this configuration 
 Or add a `.eslintrc.js` file to your project root containing:
 ```js
 module.exports = {
-	extends: ['@10up/eslint-config'],
+	extends: ['@wdc/eslint-config'],
 };
 ```
 
@@ -121,7 +121,7 @@ change the eslint parser to `@typescript-eslint/parser` and add the typescript p
 // eslintrc.js
 module.exports = {
 	parser: '@typescript-eslint/parser',
-	extends: ['@10up/eslint-config/react'],
+	extends: ['@wdc/eslint-config/react'],
 	plugins: ['@typescript-eslint'],
 }
 ```

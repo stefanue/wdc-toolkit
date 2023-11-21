@@ -65,7 +65,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 
 	it('returns valid package build config', () => {
 		getPackageMock.mockReturnValue({
-			name: '@10up/component-library',
+			name: '@wdc/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',
@@ -90,7 +90,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 		getPackageMock.mockReset();
 
 		getPackageMock.mockReturnValue({
-			name: '@10up/component-library',
+			name: '@wdc/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',
@@ -129,7 +129,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 		process.argv.push('--external=none');
 
 		getPackageMock.mockReturnValue({
-			name: '@10up/component-library',
+			name: '@wdc/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',
@@ -138,7 +138,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 				'read-pkg-up': '^1.0.1',
 				'resolve-bin': '^0.4.0',
 			},
-			'@10up/scripts': {
+			'@wdc/scripts': {
 				libraryName: 'myComponentLibrary',
 				packageType: 'commonjs',
 			},
@@ -156,7 +156,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 		});
 
 		getPackageMock.mockReturnValue({
-			name: '@10up/component-library',
+			name: '@wdc/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',
@@ -165,7 +165,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 				'read-pkg-up': '^1.0.1',
 				'resolve-bin': '^0.4.0',
 			},
-			'@10up/scripts': {
+			'@wdc/scripts': {
 				libraryName: 'myComponentLibrary',
 				packageType: 'assign-properties',
 			},

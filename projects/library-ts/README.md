@@ -4,13 +4,13 @@
 
 ## Installation
 
-`npm install --save @10up/component-accordion`
+`npm install --save @wdc/component-accordion`
 
 ## Usage
 
 #### CSS Imports
 
-`@import url("@10up/component-accordion");`
+`@import url("@wdc/component-accordion");`
 
 The styles can be imported into your existing codebase by using PostCSS imports, or by including the standalone CSS file in your project.
 
@@ -19,7 +19,7 @@ The styles can be imported into your existing codebase by using PostCSS imports,
 Create a new instance by supplying the selector to use for the accordion and an object containing any necessary callback functions.
 
 ```javascript
-import Accordion from '@10up/component-accordion';
+import Accordion from '@wdc/component-accordion';
 
 new Accordion( '.accordion', {
 	onCreate: function() {

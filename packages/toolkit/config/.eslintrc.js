@@ -1,6 +1,6 @@
 const eslintConfig = {
 	root: true,
-	extends: ['@10up/eslint-config/wordpress', '@10up/eslint-config/jest'],
+	extends: ['@wdc/eslint-config/wordpress', '@wdc/eslint-config/jest'],
 };
 
 module.exports = eslintConfig;

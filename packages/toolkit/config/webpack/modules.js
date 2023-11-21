@@ -68,23 +68,23 @@ module.exports = ({
 	// one explicitly available in the project.
 	const babelConfig = !hasBabelConfig()
 		? {
-				babelrc: false,
-				configFile: false,
-				sourceType: 'unambiguous',
-				plugins: [hasReactFastRefresh && require.resolve('react-refresh/babel')].filter(
-					Boolean,
-				),
-				presets: [
-					[
-						require.resolve('@10up/babel-preset-default'),
-						{
-							wordpress,
-							useBuiltIns: isPackage ? false : 'usage',
-							targets: defaultTargets,
-						},
-					],
+			babelrc: false,
+			configFile: false,
+			sourceType: 'unambiguous',
+			plugins: [hasReactFastRefresh && require.resolve('react-refresh/babel')].filter(
+				Boolean,
+			),
+			presets: [
+				[
+					require.resolve('@wdc/babel-preset-default'),
+					{
+						wordpress,
+						useBuiltIns: isPackage ? false : 'usage',
+						targets: defaultTargets,
+					},
 				],
-		  }
+			],
+		}
 		: {};
 
 	if (isPackageInstalled('@linaria/babel-preset') && !hasBabelConfig()) {
@@ -129,7 +129,7 @@ module.exports = ({
 							// Fix $RefreshReg$ is not defined errors with linaria and react-fast-refresh
 							// another option is to disable react fast refresh in babel preset via api.caller
 							// @see https://github.com/callstack/linaria/issues/1308#issuecomment-1732385974
-							overrideContext: (context) => ({ ...context, $RefreshReg$: () => {} }),
+							overrideContext: (context) => ({ ...context, $RefreshReg$: () => { } }),
 							babelOptions: babelConfig,
 						},
 					},

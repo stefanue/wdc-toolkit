@@ -12,8 +12,8 @@ if ( ! defined( 'SCRIPT_DEBUG' ) || ! SCRIPT_DEBUG ) {
 			"You're using <a href='%s' target='_blank'>wdc-toolkit</a>'s
 			Hot Module Reloading but don't have <code>SCRIPT_DEBUG</code> enabled.<br/>
 			Learn more about <a href='%s' target='_blank'>enabling HMR</a>.",
-			"https://github.com/10up/wdc-toolkit/tree/develop/packages/toolkit",
-			"https://github.com/10up/wdc-toolkit/tree/develop/packages/toolkit#hmr-and-fast-refresh"
+			"https://github.com/stefanue/wdc-toolkit/tree/develop/packages/toolkit",
+			"https://github.com/stefanue/wdc-toolkit/tree/develop/packages/toolkit#hmr-and-fast-refresh"
 		)
 	);
 }

@@ -38,7 +38,7 @@
 
 - d3ea57e: install @wordpress/eslint-plugin in toolkit by default
 - Updated dependencies [b172081]
-  - @10up/stylelint-config@2.0.5-next.0
+  - @wdc/stylelint-config@2.0.5-next.0
 
 ## 5.2.1
 
@@ -53,7 +53,7 @@
 
 - a930021: Fix: prettier peerDependency range
 - Updated dependencies [a930021]
-  - @10up/eslint-config@3.1.1-next.0
+  - @wdc/eslint-config@3.1.1-next.0
 
 ## 5.2.1-next.0
 
@@ -81,7 +81,7 @@
 - cb5d528: Fix: checking chunk path for block decision.
   Fix: Windows related issues
 - Updated dependencies [7ee697b]
-  - @10up/stylelint-config@2.0.4
+  - @wdc/stylelint-config@2.0.4
 
 ## 5.1.0-next.0
 
@@ -96,16 +96,16 @@
 - cb5d528: Fix: checking chunk path for block decision.
   Fix: Windows related issues
 - Updated dependencies [7ee697b]
-  - @10up/stylelint-config@2.0.4-next.0
+  - @wdc/stylelint-config@2.0.4-next.0
 
 ## 5.0.0
 
 ### Patch Changes
 
 - Updated dependencies [0f29b56]
-  - @10up/eslint-config@3.0.0
-  - @10up/babel-preset-default@2.0.4
-  - @10up/stylelint-config@2.0.3
+  - @wdc/eslint-config@3.0.0
+  - @wdc/babel-preset-default@2.0.4
+  - @wdc/stylelint-config@2.0.3
 
 ## 4.3.1
 
@@ -113,9 +113,9 @@
 
 - 010cea6: Fix processing order whenever Sass is used
 - Updated dependencies [010cea6]
-  - @10up/babel-preset-default@2.0.4
-  - @10up/eslint-config@2.4.7
-  - @10up/stylelint-config@2.0.2
+  - @wdc/babel-preset-default@2.0.4
+  - @wdc/eslint-config@2.4.7
+  - @wdc/stylelint-config@2.0.2
 
 ## 4.3.0
 
@@ -239,9 +239,9 @@
 
 ### Patch Changes
 
-- @10up/babel-preset-default@2.0.3
-- @10up/eslint-config@2.4.6
-- @10up/stylelint-config@2.0.1
+- @wdc/babel-preset-default@2.0.3
+- @wdc/eslint-config@2.4.6
+- @wdc/stylelint-config@2.0.1
 
 ## 4.1.0-next.2
 
@@ -254,7 +254,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 4.0.0
 
-- Changed: wdc-toolkit no longer transpiles `@10up/block-components`. Make sure to use the latest version of `@10up/block-components` that already ships transpiled code. [#181](https://github.com/10up/wdc-toolkit/pull/181)
+- Changed: wdc-toolkit no longer transpiles `@wdc/block-components`. Make sure to use the latest version of `@wdc/block-components` that already ships transpiled code. [#181](https://github.com/10up/wdc-toolkit/pull/181)
 - Changed [BREAKING CHANGE]: Stop injecting `wp-polyfill` as dependecy of scripts built by wdc-toolkit. [#193](https://github.com/10up/wdc-toolkit/pull/193).
 - Updated: Dependencies [#182](https://github.com/10up/wdc-toolkit/pull/182)
 - Changed [BREAKING CHANGE]: Stylelint and eslint are now peerDependencies. This is a breaking change only for those not using npm >= 7. [#179](https://github.com/10up/wdc-toolkit/pull/179)
@@ -350,13 +350,13 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 1.0.3
 
-- Update @10up/eslint-config to 2.3.5
-- Update @10up/babel-preset-defaylt to 1.1.2
+- Update @wdc/eslint-config to 2.3.5
+- Update @wdc/babel-preset-defaylt to 1.1.2
 - Add TypeScript support
 
 ## 1.0.2
 
-- Update @10up/stylelint-config to 1.1.1
+- Update @wdc/stylelint-config to 1.1.1
 
 ## 1.0.1
 

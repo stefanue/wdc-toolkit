@@ -43,7 +43,7 @@ describe('webpack.config.js', () => {
 		process.argv.push('--format=commonjs');
 		getBuildFilesMock.mockReturnValue({});
 		getPackageMock.mockReturnValue({
-			name: '@10up/component-library',
+			name: '@wdc/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',
@@ -71,7 +71,7 @@ describe('webpack.config.js', () => {
 			return file === 'public/index.html';
 		});
 		getPackageMock.mockReturnValue({
-			name: '@10up/component-library',
+			name: '@wdc/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			'umd:main': 'dist/index.umd.js',
@@ -148,7 +148,7 @@ describe('webpack.config.js', () => {
 	it('takes the --target option into account', () => {
 		getBuildFilesMock.mockReturnValue({});
 		getPackageMock.mockReturnValue({
-			name: '@10up/component-library',
+			name: '@wdc/component-library',
 			source: 'src/index.js',
 			main: 'dist/index.js',
 			exports: {

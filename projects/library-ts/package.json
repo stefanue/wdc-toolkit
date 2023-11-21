@@ -1,8 +1,8 @@
 {
-    "name": "@10up/library-ts-test",
+    "name": "@wdc/library-ts-test",
     "version": "2.1.5",
     "private": true,
-    "author": "10up",
+    "author": "Stefan Vasiljevic",
     "description": "Accessible accordion component.",
     "main": "dist/index.js",
     "source": "src/index.ts",

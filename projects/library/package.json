@@ -1,7 +1,7 @@
 {
-    "name": "@10up/component-accordion",
+    "name": "@wdc/component-accordion",
     "version": "2.1.5",
-    "author": "10up",
+    "author": "Stefan Vasiljevic",
     "private": true,
     "description": "Accessible accordion component.",
     "main": "dist/index.js",

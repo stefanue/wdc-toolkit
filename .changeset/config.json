@@ -1,14 +1,14 @@
 {
-  "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
-  "changelog": "@changesets/cli/changelog",
-  "commit": false,
-  "fixed": [],
-  "linked": [],
-  "access": "restricted",
-  "baseBranch": "trunk",
-  "updateInternalDependencies": "patch",
-  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
-    "onlyUpdatePeerDependentsWhenOutOfRange": true
-  },
-  "ignore": ["tenup-theme", "@10up/component-accordion", "@10up/library-ts-test"]
+    "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
+    "changelog": "@changesets/cli/changelog",
+    "commit": false,
+    "fixed": [],
+    "linked": [],
+    "access": "restricted",
+    "baseBranch": "trunk",
+    "updateInternalDependencies": "patch",
+    "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
+        "onlyUpdatePeerDependentsWhenOutOfRange": true
+    },
+    "ignore": ["tenup-theme", "@wdc/component-accordion", "@wdc/library-ts-test"]
 }

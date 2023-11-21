@@ -2,7 +2,7 @@
     "name": "@wdc/eslint-plugin",
     "version": "2.0.0",
     "description": "ESLint plugin for WordPress development.",
-    "author": "10up",
+    "author": "Stefan Vasiljevic",
     "license": "GPL-2.0-or-later",
     "keywords": [
         "wordpress",
@@ -45,8 +45,8 @@
         "requireindex": "^1.2.0"
     },
     "devDependencies": {
-        "@10up/babel-preset-default": "^2.0.4",
-        "@10up/eslint-config": "^3.1.1-next.0"
+        "@wdc/babel-preset-default": "^2.0.4",
+        "@wdc/eslint-config": "^3.1.1-next.0"
     },
     "peerDependencies": {
         "@babel/core": ">=7",
