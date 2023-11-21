@@ -4,18 +4,18 @@
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level) [![License: GPL 2.0 or later](https://img.shields.io/badge/License-GPL%202.0%20or%20later-yellow.svg)](https://spdx.org/licenses/GPL-2.0-or-later.html)
 
-[![projects builds](https://github.com/10up/10up-toolkit/actions/workflows/build-test-projects.yml/badge.svg)](https://github.com/10up/10up-toolkit/actions/workflows/build-test-projects.yml) [![tests](https://github.com/10up/10up-toolkit/actions/workflows/test.yml/badge.svg)](https://github.com/10up/10up-toolkit/actions/workflows/test.yml) 
+[![projects builds](https://github.com/10up/wdc-toolkit/actions/workflows/build-test-projects.yml/badge.svg)](https://github.com/10up/wdc-toolkit/actions/workflows/build-test-projects.yml) [![tests](https://github.com/10up/wdc-toolkit/actions/workflows/test.yml/badge.svg)](https://github.com/10up/wdc-toolkit/actions/workflows/test.yml) 
 
 ## Tools
 
 * [@10up/babel-preset-default](packages/babel-preset-default/README.md)
 * [@10up/eslint-config](packages/eslint-config/README.md)
 * [@10up/stylelint-config](packages/stylelint-config/README.md)
-* [10up-toolkit](packages/toolkit/README.md)
+* [wdc-toolkit](packages/toolkit/README.md)
 
 ## Documentation
 
-Check out the documentation in [10up-toolkit](packages/toolkit/README.md) README file.
+Check out the documentation in [wdc-toolkit](packages/toolkit/README.md) README file.
 
 ## Support Level
 

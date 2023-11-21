@@ -54,11 +54,6 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 - Reverted - 10up's eslint plugin
 
-## 2.4.2
-
-- Changed - Updated prettier config to rename jsxBracketSameLine to bracketSameLine (https://prettier.io/blog/2021/09/09/2.4.0.html) [#149](https://github.com/10up/10up-toolkit/pull/149)
-- Changed - Dropped `@wordpress/eslint-plugin` in favor of `@10up/eslint-plugin`. [#153](https://github.com/10up/10up-toolkit/pull/153)
-
 ## 2.4.0
 
 - Updated eslint-config-airbnb-base and eslint-config-airbnb
@@ -71,10 +66,6 @@ All notable changes to this project will be documented in this file, per [the Ke
 ## 2.3.7
 
 - Updated deps
-
-## 2.3.6
-
-- Updated deps [82](https://github.com/10up/10up-toolkit/pull/82)
 
 ## 2.3.4
 

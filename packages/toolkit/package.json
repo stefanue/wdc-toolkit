@@ -15,7 +15,7 @@
     },
     "version": "5.2.2",
     "bin": {
-        "10up-toolkit": "bin/10up-toolkit.js"
+        "wdc-toolkit": "bin/wdc-toolkit.js"
     },
     "dependencies": {
         "@babel/core": "^7.21.8",

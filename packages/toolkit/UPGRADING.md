@@ -32,13 +32,13 @@ The minimum Node.js version is 12.x, however Node.js 16 is strongly recommended.
 
 ### Minimum NPM version
 
-In theory 10up-toolkit can be installed with any npm version >= 6, however we don't recommend npm < 7. 
+In theory wdc-toolkit can be installed with any npm version >= 6, however we don't recommend npm < 7. 
 
-~~If you're getting an install error due to conflicting prettier dependencies, we recommend updating to npm 8.  There's an [known issue](https://github.com/WordPress/gutenberg/issues/39208) with `@wordpress/eslint-plugin` that can break installations of 10up-toolkit when using npm < 8. Alternatively if you're not on npm 8, you can try pinning `prettier` to `2.4.1` in your package.json to force npm install the version toolkit uses.~~ Fixed in [#166](https://github.com/10up/10up-toolkit/pull/166)
+~~If you're getting an install error due to conflicting prettier dependencies, we recommend updating to npm 8.  There's an [known issue](https://github.com/WordPress/gutenberg/issues/39208) with `@wordpress/eslint-plugin` that can break installations of wdc-toolkit when using npm < 8. Alternatively if you're not on npm 8, you can try pinning `prettier` to `2.4.1` in your package.json to force npm install the version toolkit uses.~~ Fixed in [#166](https://github.com/10up/wdc-toolkit/pull/166)
 
 ### BrowserSync packages have been removed by default.
 
-With the introduction of Hot Module Reload and React Fast Refresh, browser-sync has been deprecated in 10up-toolkit. However, if you wish to continue using browser sync while migrating to HMR & Fast Refresh, you can do so by installing `browser-sync` and `browser-sync-webpack-plugin`.
+With the introduction of Hot Module Reload and React Fast Refresh, browser-sync has been deprecated in wdc-toolkit. However, if you wish to continue using browser sync while migrating to HMR & Fast Refresh, you can do so by installing `browser-sync` and `browser-sync-webpack-plugin`.
 
 ```
 npm install --save-dev browser-sync browser-sync-webpack-plugin
@@ -50,7 +50,7 @@ If you're using NPM workspaces, make sure to specify the desired workspace.
 npm install --save-dev browser-sync browser-sync-webpack-plugin -w=workspace-name
 ```
 
-Browser sync will be automatically enabled if a `devURL` is specified and those packages are installed when you run `10up-toolkit watch` and `10up-tooking start`.
+Browser sync will be automatically enabled if a `devURL` is specified and those packages are installed when you run `wdc-toolkit watch` and `10up-tooking start`.
 
 ### The post css plugin `postcss-object-fit-image` has been removed
 
@@ -59,7 +59,7 @@ The post css plugin `postcss-object-fit-image` is no longer needed since we stop
 Note that the recommended way of extending `postcss.config.js` is as follows:
 
 ```javascript
-const baseConfig = require('10up-toolkit/config/postcss.config.js');
+const baseConfig = require('wdc-toolkit/config/postcss.config.js');
 
 module.exports = (props) => {
     const config = baseConfig(props);
@@ -81,7 +81,7 @@ If you are extending the webpack config and making use of `imagemin-webpack-plug
 If you want to extend your webpack config to optimize additional files you can do so the following way:
 
 ```javascript
-const config = require('10up-toolkit/config/webpack.config.js');
+const config = require('wdc-toolkit/config/webpack.config.js');
 
 config.optimization.minimizer.push(
     new ImageMinimizerPlugin({
@@ -96,7 +96,7 @@ config.optimization.minimizer.push(
 return config;
 ```
 
-**IMPORTANT**: If you were extending the webpack config to change how svgs are optimized (such as prevent removing viewBox), 10up-toolkit no longer strips viewbox from svgs.
+**IMPORTANT**: If you were extending the webpack config to change how svgs are optimized (such as prevent removing viewBox), wdc-toolkit no longer strips viewbox from svgs.
 
 ## HMR & Fast Refresh
 

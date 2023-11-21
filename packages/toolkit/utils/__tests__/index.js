@@ -93,8 +93,8 @@ describe('utils', () => {
 			getArgsFromCLIMock.mockReturnValue([]);
 			hasPackagePropMock.mockReturnValue(false);
 			hasProjectFileMock.mockReturnValue(false);
-			fromProjectRootMock.mockImplementation((path) => `/p/${path}`);
-			fromConfigRootMock.mockImplementation((path) => `/c/${path}`);
+			fromProjectRootMock.mockImplementation((path) => `/p/${ path }`);
+			fromConfigRootMock.mockImplementation((path) => `/c/${ path }`);
 		});
 
 		afterEach(() => {
@@ -153,7 +153,7 @@ describe('utils', () => {
 
 		beforeAll(() => {
 			exitMock.mockImplementation((code) => {
-				throw new Error(`Exit code: ${code}.`);
+				throw new Error(`Exit code: ${ code }.`);
 			});
 		});
 
@@ -169,7 +169,7 @@ describe('utils', () => {
 		test('should exit when an unknown script name provided', () => {
 			expect(() => spawnScript('unknown-script')).toThrow('Exit code: 1.');
 			expect(console).toHaveLoggedWith(
-				'Unknown script "unknown-script". Perhaps you need to update 10up-toolkit?',
+				'Unknown script "unknown-script". Perhaps you need to update wdc-toolkit?',
 			);
 		});
 

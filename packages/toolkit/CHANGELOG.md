@@ -105,7 +105,7 @@
   Fixes #198
   Fixes #228
 
-- 45d73c4: Forks webpack-remove-empty-script into 10up-toolkit and remove the ansis dependency.
+- 45d73c4: Forks webpack-remove-empty-script into wdc-toolkit and remove the ansis dependency.
 
 ## 4.3.0-next.0
 
@@ -121,7 +121,7 @@
   Fixes #198
   Fixes #228
 
-- aec9ac4: Forks webpack-remove-empty-script into 10up-toolkit and remove the ansis dependency.
+- aec9ac4: Forks webpack-remove-empty-script into wdc-toolkit and remove the ansis dependency.
 
 ## 4.2.2
 
@@ -152,7 +152,7 @@
 ### Minor Changes
 
 - 2e67b06: Replaces `squoosh` with a custom implementation using `sharp` for optimizing images.
-- d60ce6c: Refine the way block assets get handled. 10up-toolkit will now create Webpack entrypoints for any assets that are defined in any block.json files automatically for you. So no need to manually adding manual entrypoints per block.
+- d60ce6c: Refine the way block assets get handled. wdc-toolkit will now create Webpack entrypoints for any assets that are defined in any block.json files automatically for you. So no need to manually adding manual entrypoints per block.
 
 ### Patch Changes
 
@@ -174,7 +174,7 @@
 
 ### Minor Changes
 
-- d60ce6c: Refine the way block assets get handled. 10up-toolkit will now create Webpack entrypoints for any assets that are defined in any block.json files automatically for you. So no need to manually adding manual entrypoints per block.
+- d60ce6c: Refine the way block assets get handled. wdc-toolkit will now create Webpack entrypoints for any assets that are defined in any block.json files automatically for you. So no need to manually adding manual entrypoints per block.
 
 ## 4.1.2
 
@@ -202,13 +202,13 @@
 
 ### Patch Changes
 
-- da9c394: Treat js files inside `block` or `blocks` directories as blocks. [#204](https://github.com/10up/10up-toolkit/pull/204)
+- da9c394: Treat js files inside `block` or `blocks` directories as blocks. [#204](https://github.com/10up/wdc-toolkit/pull/204)
 
 ## 4.1.0
 
 ### Minor Changes
 
-- c206d75: Remove grid autoprefixer. See https://github.com/10up/10up-toolkit/pull/197
+- c206d75: Remove grid autoprefixer. See https://github.com/10up/wdc-toolkit/pull/197
 - f33afc6: Fix react-refresh-runtime entrypoint
 
 ### Patch Changes
@@ -221,23 +221,23 @@
 
 ### Minor Changes
 
-- c206d75: Remove grid autoprefixer. See https://github.com/10up/10up-toolkit/pull/197
+- c206d75: Remove grid autoprefixer. See https://github.com/10up/wdc-toolkit/pull/197
 - f33afc6: Fix react-refresh-runtime entrypoint
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
 ## 4.0.0
 
-- Changed: 10up-toolkit no longer transpiles `@10up/block-components`. Make sure to use the latest version of `@10up/block-components` that already ships transpiled code. [#181](https://github.com/10up/10up-toolkit/pull/181)
-- Changed [BREAKING CHANGE]: Stop injecting `wp-polyfill` as dependecy of scripts built by 10up-toolkit. [#193](https://github.com/10up/10up-toolkit/pull/193).
-- Updated: Dependencies [#182](https://github.com/10up/10up-toolkit/pull/182)
-- Changed [BREAKING CHANGE]: Stylelint and eslint are now peerDependencies. This is a breaking change only for those not using npm >= 7. [#179](https://github.com/10up/10up-toolkit/pull/179)
+- Changed: wdc-toolkit no longer transpiles `@10up/block-components`. Make sure to use the latest version of `@10up/block-components` that already ships transpiled code. [#181](https://github.com/10up/wdc-toolkit/pull/181)
+- Changed [BREAKING CHANGE]: Stop injecting `wp-polyfill` as dependecy of scripts built by wdc-toolkit. [#193](https://github.com/10up/wdc-toolkit/pull/193).
+- Updated: Dependencies [#182](https://github.com/10up/wdc-toolkit/pull/182)
+- Changed [BREAKING CHANGE]: Stylelint and eslint are now peerDependencies. This is a breaking change only for those not using npm >= 7. [#179](https://github.com/10up/wdc-toolkit/pull/179)
 
 ## 3.1.0
 
-- Fixed: `dev-server` flag [#178](https://github.com/10up/10up-toolkit/pull/178)
-- Added: `--target` option [#176](https://github.com/10up/10up-toolkit/pull/175)
-- Added: Basic support for `exports` package.json field in package mode. [#170](https://github.com/10up/10up-toolkit/pull/170)
+- Fixed: `dev-server` flag [#178](https://github.com/10up/wdc-toolkit/pull/178)
+- Added: `--target` option [#176](https://github.com/10up/wdc-toolkit/pull/175)
+- Added: Basic support for `exports` package.json field in package mode. [#170](https://github.com/10up/wdc-toolkit/pull/170)
 
 ## 3.0.3
 
@@ -249,14 +249,14 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 3.0.0
 
-- Added - Introduced the `--analyze` option to the build to enable webpack-bundle-analyzer [#148](https://github.com/10up/10up-toolkit/pull/148)
-- Added - Introduced HMR and React Fast Refresh [#150](https://github.com/10up/10up-toolkit/pull/150)
-- Added - Introduced `TenUpToolkitTscPlugin` that runs tsc both on build and watch if tsconfig.json is present. [#151](https://github.com/10up/10up-toolkit/pull/161)
-- Changed - Eslint and stylelint now only lint changed files when building with webpack (lintDirtyModulesOnly) [#146](https://github.com/10up/10up-toolkit/pull/146)
-- Changed - Replaced `imagemin-webpack-plugin` with `image-minimizer-webpack-plugin` [#147](https://github.com/10up/10up-toolkit/pull/147)
-- Changed - Droped `imagemin` in favor of `squoosh` [#157](https://github.com/10up/10up-toolkit/pull/157)
+- Added - Introduced the `--analyze` option to the build to enable webpack-bundle-analyzer [#148](https://github.com/10up/wdc-toolkit/pull/148)
+- Added - Introduced HMR and React Fast Refresh [#150](https://github.com/10up/wdc-toolkit/pull/150)
+- Added - Introduced `TenUpToolkitTscPlugin` that runs tsc both on build and watch if tsconfig.json is present. [#151](https://github.com/10up/wdc-toolkit/pull/161)
+- Changed - Eslint and stylelint now only lint changed files when building with webpack (lintDirtyModulesOnly) [#146](https://github.com/10up/wdc-toolkit/pull/146)
+- Changed - Replaced `imagemin-webpack-plugin` with `image-minimizer-webpack-plugin` [#147](https://github.com/10up/wdc-toolkit/pull/147)
+- Changed - Droped `imagemin` in favor of `squoosh` [#157](https://github.com/10up/wdc-toolkit/pull/157)
 - Changed - Updated `@svgr/webpack` to 6.2.1 and removed `postcss-object-fit-image` as it's not necessary.
-- Deprecated - BrowserSync [#159](https://github.com/10up/10up-toolkit/pull/159)
+- Deprecated - BrowserSync [#159](https://github.com/10up/wdc-toolkit/pull/159)
 
 ## 2.1.0
 
@@ -278,23 +278,23 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 1.0.12
 
-- Fixed: BrowserSync Config [#105](https://github.com/10up/10up-toolkit/pull/105)
-- Fixed: webpack watch command [#105](https://github.com/10up/10up-toolkit/pull/105)
+- Fixed: BrowserSync Config [#105](https://github.com/10up/wdc-toolkit/pull/105)
+- Fixed: webpack watch command [#105](https://github.com/10up/wdc-toolkit/pull/105)
 - Updated deps
 
 ## 1.0.11
 
-- Fixed: Allows passing a `--port` flag to browser-sync `10up-toolkit start|watch --port=3002` [#95](https://github.com/10up/10up-toolkit/pull/95)
-- Fixed: dev-server public path [#98](https://github.com/10up/10up-toolkit/pull/98)
+- Fixed: Allows passing a `--port` flag to browser-sync `wdc-toolkit start|watch --port=3002` [#95](https://github.com/10up/wdc-toolkit/pull/95)
+- Fixed: dev-server public path [#98](https://github.com/10up/wdc-toolkit/pull/98)
 
 ## 1.0.10
 
-- Fixed empty scripts output when a CSS entry is added.[#91](https://github.com/10up/10up-toolkit/pull/91)
+- Fixed empty scripts output when a CSS entry is added.[#91](https://github.com/10up/wdc-toolkit/pull/91)
 
 ## 1.0.9
 
-- Updated deps [82](https://github.com/10up/10up-toolkit/pull/82)
-- Remove husky from 10up-toolkit [81] (Updated: Husky to 6.x)
+- Updated deps [82](https://github.com/10up/wdc-toolkit/pull/82)
+- Remove husky from wdc-toolkit [81] (Updated: Husky to 6.x)
 
 ## 1.0.8
 
@@ -303,20 +303,20 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 1.0.7
 
-- Fixed: Babel error when running jest. [#71](https://github.com/10up/10up-toolkit/pull/71)
-- Added: Webpack Dev Server [#70](https://github.com/10up/10up-toolkit/pull/70)
+- Fixed: Babel error when running jest. [#71](https://github.com/10up/wdc-toolkit/pull/71)
+- Added: Webpack Dev Server [#70](https://github.com/10up/wdc-toolkit/pull/70)
 
 ## 1.0.6
 
-- Fixed: webpack externals definitions [#67](https://github.com/10up/10up-toolkit/pull/67)
+- Fixed: webpack externals definitions [#67](https://github.com/10up/wdc-toolkit/pull/67)
 
 ## 1.0.5
 
-- Fixed: Regex in asset/resources. [#63](https://github.com/10up/10up-toolkit/pull/63)
-- Fixed: Babel transpilation for publishing packages `["sourceType": "unambiguous"]`. [#63](https://github.com/10up/10up-toolkit/pull/63)
-- Fixed: Webpack Externals definition [#63](https://github.com/10up/10up-toolkit/pull/63)
-- Update: Prettier to 1.3.0 and stop using version range. [#64](https://github.com/10up/10up-toolkit/pull/64)
-- Added: Support for CSS Modules. [#65](https://github.com/10up/10up-toolkit/pull/65)
+- Fixed: Regex in asset/resources. [#63](https://github.com/10up/wdc-toolkit/pull/63)
+- Fixed: Babel transpilation for publishing packages `["sourceType": "unambiguous"]`. [#63](https://github.com/10up/wdc-toolkit/pull/63)
+- Fixed: Webpack Externals definition [#63](https://github.com/10up/wdc-toolkit/pull/63)
+- Update: Prettier to 1.3.0 and stop using version range. [#64](https://github.com/10up/wdc-toolkit/pull/64)
+- Added: Support for CSS Modules. [#65](https://github.com/10up/wdc-toolkit/pull/65)
 
 ## 1.0.4
 
@@ -341,11 +341,11 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 - Adds support for authoring libraries.
 
-## Pre 10up-toolkit
+## Pre wdc-toolkit
 
 ## 1.3.4
 
-- Deprecate 10up-scripts command and exposes a new 10up-toolkit command.
+- Deprecate 10up-scripts command and exposes a new wdc-toolkit command.
 
 ## 1.3.3
 

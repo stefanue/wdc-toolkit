@@ -33,7 +33,7 @@ The `develop` branch is the development branch which means it contains the next 
 - [Node.js](https://nodejs.org/) >= 16.0.0. 
 
 ## Get the project running
-1. Clone the project `git@github.com:10up/10up-toolkit.git` somewhere.
+1. Clone the project `git@github.com:10up/wdc-toolkit.git` somewhere.
 1. `cd` into the cloned repository
 1. Run `npm install`
 1. Install wp-env using `npm -g i @wordpress/env` if you don't already have it.
@@ -42,7 +42,7 @@ The `develop` branch is the development branch which means it contains the next 
 1. Activate the `10up-theme` theme under Appearances > Themes
 1. Run `npm start` to watch for changes and build.
 
-After completing the steps above, you can make changes to the `./packages/` files and see how they change the build you have in the sample `./projects/10up-theme` project. You can experiment by adding a console.log to the `10up-toolkit/packages/toolkit/scripts/start.js` file and looking the output in the terminal.
+After completing the steps above, you can make changes to the `./packages/` files and see how they change the build you have in the sample `./projects/10up-theme` project. You can experiment by adding a console.log to the `wdc-toolkit/packages/toolkit/scripts/start.js` file and looking the output in the terminal.
 ## Troubleshooting
 
 This is a mono repo that leverages [NPM Workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces)

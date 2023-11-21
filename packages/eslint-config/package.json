@@ -27,11 +27,11 @@
         "directory": "packages/eslint-config"
     },
     "bugs": {
-        "url": "https://github.com/10up/10up-toolkit/issues"
+        "url": "https://github.com/stefanue/wdc-toolkit/issues"
     },
     "author": "10up <info@10up.com> (https://10up.com)",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://github.com/10up/10up-toolkit/tree/develop/packages/eslint-config#readme",
+    "homepage": "https://github.com/stefanue/wdc-toolkit/tree/develop/packages/eslint-config#readme",
     "keywords": [
         "eslint",
         "eslint-config",

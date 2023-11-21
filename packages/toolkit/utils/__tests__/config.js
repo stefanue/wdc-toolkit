@@ -26,7 +26,7 @@ describe('getTenUpScriptsConfig', () => {
 
 	it('overrides and merges config properly', () => {
 		getPackageMock.mockReturnValueOnce({
-			'10up-toolkit': {
+			'wdc-toolkit': {
 				entry: {
 					'entry1.js': 'dist/output.js',
 				},
@@ -104,7 +104,7 @@ describe('getTenUpScriptsPackageBuildConfig', () => {
 				'*': './dist/index.js',
 				'./utils': './dist/utils.js',
 			},
-			'10up-toolkit': {
+			'wdc-toolkit': {
 				libraryName: 'myComponentLibrary',
 			},
 		});

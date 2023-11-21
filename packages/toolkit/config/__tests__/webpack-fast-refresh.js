@@ -51,7 +51,7 @@ describe('webpack.config.js', () => {
 		};
 		getBuildFilesMock.mockReturnValue(entryBuildFiles);
 		getPackageMock.mockReturnValue({
-			'10up-toolkit': {
+			'wdc-toolkit': {
 				entry: entryBuildFiles,
 			},
 		});

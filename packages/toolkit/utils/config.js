@@ -87,12 +87,12 @@ function getJestOverrideConfigFile(suffix) {
 		return undefined;
 	}
 
-	if (hasProjectFile(`jest-${suffix}.config.js`)) {
-		return fromProjectRoot(`jest-${suffix}.config.js`);
+	if (hasProjectFile(`jest-${ suffix }.config.js`)) {
+		return fromProjectRoot(`jest-${ suffix }.config.js`);
 	}
 
 	if (!hasJestConfig()) {
-		return fromConfigRoot(`jest-${suffix}.config.js`);
+		return fromConfigRoot(`jest-${ suffix }.config.js`);
 	}
 
 	return undefined;
@@ -136,7 +136,7 @@ const getDefaultConfig = () => {
  */
 const getTenUpScriptsConfig = () => {
 	const packageJson = getPackage();
-	const config = packageJson['10up-toolkit'] || packageJson['@10up/scripts'];
+	const config = packageJson['wdc-toolkit'] || packageJson['@10up/scripts'];
 	const defaultConfig = getDefaultConfig();
 
 	if (!config) {
@@ -197,7 +197,7 @@ const normalizePackageType = (type) => {
 };
 
 /**
- * Returns 10up-toolkit configs for package builds. If 10up-toolkit is not configured for building packages,
+ * Returns wdc-toolkit configs for package builds. If wdc-toolkit is not configured for building packages,
  * this returns false.
  *
  * @returns {object | boolean}
