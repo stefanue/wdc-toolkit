@@ -8,9 +8,9 @@
 
 ## Tools
 
-* [@wdc/babel-preset-default](packages/babel-preset-default/README.md)
-* [@wdc/eslint-config](packages/eslint-config/README.md)
-* [@wdc/stylelint-config](packages/stylelint-config/README.md)
+* [@wdcthemes/babel-preset-default](packages/babel-preset-default/README.md)
+* [@wdcthemes/eslint-config](packages/eslint-config/README.md)
+* [@wdcthemes/stylelint-config](packages/stylelint-config/README.md)
 * [wdc-toolkit](packages/toolkit/README.md)
 
 ## Documentation

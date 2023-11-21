@@ -42,7 +42,7 @@ npm install --save-dev wdc-toolkit
 If you're using a version of NPM lower than 7 and `wdc-toolkit` from version `4.0.0` you'll also need to install the following dependencies manually:
 
 ```bash{showPrompt}
-npm install --save-dev stylelint @wdc/stylelint-config @wdc/eslint-config @wdc/babel-preset-default
+npm install --save-dev stylelint @wdcthemes/stylelint-config @wdcthemes/eslint-config @wdcthemes/babel-preset-default
 ```
 
 ### Setting it up
@@ -328,7 +328,7 @@ module.exports = (api) => {
 	// This caches the Babel config
 	api.cache.using(() => process.env.NODE_ENV);
 	return {
-		presets: ["@wdc/babel-preset-default"],
+		presets: ["@wdcthemes/babel-preset-default"],
 		// Applies the react-refresh Babel plugin on non-production modes only
 		...(!api.env("production") && { plugins: ["react-refresh/babel"] }),
 	};
@@ -366,7 +366,7 @@ It's not required, but you might want to create a `.eslintrc.js` and `stylelint.
 ```javascript
 // .eslintrc.js
 module.exports = {
-	extends: ["@wdc/eslint-config/wordpress"],
+	extends: ["@wdcthemes/eslint-config/wordpress"],
 };
 ```
 
@@ -375,7 +375,7 @@ You can extend any of the [available configs](https://github.com/10up/wdc-toolki
 ```javascript
 // stylelint.config.js
 const config = {
-	extends: ["@wdc/stylelint-config"],
+	extends: ["@wdcthemes/stylelint-config"],
 };
 
 module.exports = config;
@@ -548,7 +548,7 @@ The example below will update the webpack config so that wdc-toolkit processes a
 const config = require("wdc-toolkit/config/webpack.config.js");
 
 config.module.rules[0].exclude =
-	/node_modules\/(?!(@wdc\/block-components)|(@vendor\/your-custom-package)\/).*/;
+	/node_modules\/(?!(@wdcthemes\/block-components)|(@vendor\/your-custom-package)\/).*/;
 
 module.exports = config;
 ```
@@ -570,7 +570,7 @@ module.exports = config;
 
 ### Customizing eslint and styling
 
-To customize eslint, create a supported eslint config file at the root of your project. Make sure to extend the `@wdc/eslint-config` package.
+To customize eslint, create a supported eslint config file at the root of your project. Make sure to extend the `@wdcthemes/eslint-config` package.
 
 If you're writing tests with Jest for example, you will need to include the rules for jest.
 
@@ -578,7 +578,7 @@ If you're writing tests with Jest for example, you will need to include the rule
 // .eslintrc.js
 
 module.exports = {
-	extends: ["@wdc/eslint-config/wordpress", "@wdc/eslint-config/jest"],
+	extends: ["@wdcthemes/eslint-config/wordpress", "@wdcthemes/eslint-config/jest"],
 	rules: {
 		/* add or modify rules here */
 	},
@@ -590,7 +590,7 @@ Similarly, for customizing stylelint, create a `stylelint.config.js` file.
 ```javascript
 // stylelint.config.js
 const config = {
-	extends: ["@wdc/stylelint-config"],
+	extends: ["@wdcthemes/stylelint-config"],
 	rules: {
 		/* add or modify rules here */
 	},
@@ -818,7 +818,7 @@ To enable better support for linting with VSCode and other IDE's we recommend th
 ```javascript
 module.exports = {
 	parser: "@typescript-eslint/parser",
-	extends: ["@wdc/eslint-config/react"], // or @wdc/eslint-config/wordpress
+	extends: ["@wdcthemes/eslint-config/react"], // or @wdcthemes/eslint-config/wordpress
 	plugins: ["@typescript-eslint"],
 };
 ```

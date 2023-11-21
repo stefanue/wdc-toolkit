@@ -1,5 +1,5 @@
 const config = {
-	extends: ['@wdc/stylelint-config/scss'],
+	extends: ['@wdcthemes/stylelint-config/scss'],
 };
 
 module.exports = config;

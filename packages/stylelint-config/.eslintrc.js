@@ -1,3 +1,3 @@
 module.exports = {
-	extends: '@wdc/eslint-config/node',
+	extends: '@wdcthemes/eslint-config/node',
 };

@@ -76,7 +76,7 @@ module.exports = ({
 			),
 			presets: [
 				[
-					require.resolve('@wdc/babel-preset-default'),
+					require.resolve('@wdcthemes/babel-preset-default'),
 					{
 						wordpress,
 						useBuiltIns: isPackage ? false : 'usage',

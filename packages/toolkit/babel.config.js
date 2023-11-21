@@ -1,3 +1,3 @@
 module.exports = {
-	presets: [['@wdc/babel-preset-default', { wordpress: true }]],
+	presets: [['@wdcthemes/babel-preset-default', { wordpress: true }]],
 };

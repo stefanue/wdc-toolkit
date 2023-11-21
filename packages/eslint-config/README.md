@@ -4,43 +4,43 @@
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 
-[@wdc/eslint-config](https://github.com/10up/eslint-config) is a shareable configuration package for [eslint](http://eslint.org) built on top of [eslint-airbnb-config](https://github.com/airbnb/javascript) and modified to meet 10up's own standards.
+[@wdcthemes/eslint-config](https://github.com/10up/eslint-config) is a shareable configuration package for [eslint](http://eslint.org) built on top of [eslint-airbnb-config](https://github.com/airbnb/javascript) and modified to meet 10up's own standards.
 
 ## Installation
 
-Install [@wdc/eslint-config](https://github.com/10up/eslint-config) as a development dependency of your project:
+Install [@wdcthemes/eslint-config](https://github.com/10up/eslint-config) as a development dependency of your project:
 
 ```sh
-npm install @wdc/eslint-config --save-dev
+npm install @wdcthemes/eslint-config --save-dev
 ```
 
 ## Available ESLint configs
 
-### @wdc/eslint-config
+### @wdcthemes/eslint-config
 
 The default export contains common rules that are not specific to any framework or environment.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@wdc/eslint-config'],
+	extends: ['@wdcthemes/eslint-config'],
 };
 ```
 
-### @wdc/eslint-config/react
+### @wdcthemes/eslint-config/react
 
-Extends `@wdc/eslint-config` adding specific rules to React.
+Extends `@wdcthemes/eslint-config` adding specific rules to React.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@wdc/eslint-config/react'],
+	extends: ['@wdcthemes/eslint-config/react'],
 };
 ```
 
-### @wdc/eslint-config/wordpress
+### @wdcthemes/eslint-config/wordpress
 
-Extends `@wdc/eslint-config/react` adding the custom gutenberg rules from `@wordpress/eslint-plugin`.
+Extends `@wdcthemes/eslint-config/react` adding the custom gutenberg rules from `@wordpress/eslint-plugin`.
 
 *Note*: This is an optional dependency, if you want to use this set of rules you must install `@wordpress/eslint-plugin` first.
 
@@ -51,40 +51,40 @@ npm install --save-dev @wordpress/eslint-plugin
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@wdc/eslint-config/wordpress'],
+	extends: ['@wdcthemes/eslint-config/wordpress'],
 };
 ```
 
-### @wdc/eslint-config/node
+### @wdcthemes/eslint-config/node
 
-Extends `@wdc/eslint-config` adding specific rules to Node.js.
+Extends `@wdcthemes/eslint-config` adding specific rules to Node.js.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@wdc/eslint-config/node'],
+	extends: ['@wdcthemes/eslint-config/node'],
 };
 ```
 
-### @wdc/eslint-config/jest
+### @wdcthemes/eslint-config/jest
 
 Adds specific rules for the `jest` testing framework.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@wdc/eslint-config/react', '@wdc/eslint-config/jest'],
+	extends: ['@wdcthemes/eslint-config/react', '@wdcthemes/eslint-config/jest'],
 };
 ```
 
-### @wdc/eslint-config/legacy
+### @wdcthemes/eslint-config/legacy
 
 This legacy config contains only rules for ES5. It should be used for projects without babel that are still writing legacy JavaScript code.
 
 ```js
 // eslintrc.js
 module.exports = {
-	extends: ['@wdc/eslint-config/legacy'],
+	extends: ['@wdcthemes/eslint-config/legacy'],
 };
 ```
 
@@ -95,7 +95,7 @@ In order to use this config, choose the one you want and add this configuration 
 ```json
 {
     "eslintConfig": {
-        "extends": "@wdc/eslint-config"
+        "extends": "@wdcthemes/eslint-config"
     }
 }
 ```
@@ -103,7 +103,7 @@ In order to use this config, choose the one you want and add this configuration 
 Or add a `.eslintrc.js` file to your project root containing:
 ```js
 module.exports = {
-	extends: ['@wdc/eslint-config'],
+	extends: ['@wdcthemes/eslint-config'],
 };
 ```
 
@@ -121,7 +121,7 @@ change the eslint parser to `@typescript-eslint/parser` and add the typescript p
 // eslintrc.js
 module.exports = {
 	parser: '@typescript-eslint/parser',
-	extends: ['@wdc/eslint-config/react'],
+	extends: ['@wdcthemes/eslint-config/react'],
 	plugins: ['@typescript-eslint'],
 }
 ```
