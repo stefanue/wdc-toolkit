@@ -41,4 +41,4 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [1.0.0] - Initial Release
 
-Initial Release of 10up babel-preset.
+Initial Release of wdc babel-preset.

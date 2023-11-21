@@ -1,6 +1,6 @@
 # wdc-toolkit
 
-A collection of bundled scripts for 10up development.
+A collection of bundled scripts for development.
 
 1. [Introduction](#introduction)
 2. [Authoring Projects](#projects)
@@ -15,8 +15,7 @@ A collection of bundled scripts for 10up development.
 
 ## <a id="introduction"></a>Introduction
 
-wdc-toolkit is 10up's official asset bundling tool based on Webpack 5. It comes with support for many things commonly
-used across 10up's projects such as:
+wdc-toolkit is an asset bundling tool based on Webpack 5. It comes with support for many things commonly:
 
 - JavaScript transpilation through babel
 - core-js@3 automatic polyfill injection (project mode)
@@ -88,8 +87,6 @@ well when you're building a package for distribution.
 ## <a id="projects"></a>Authoring Projects
 
 When running in **project mode** wdc-toolkit will automatically inject core-js polyfills and also allow for multiple entry points.
-
-10up's [wp-scaffold](https://github.com/10up/wp-scaffold/blob/trunk/themes/10up-theme/package.json) is a good example of wdc-toolkit being used in project mode.
 
 Here's how a `package.json` would look like for using wdc-toolkit this way:
 
@@ -237,7 +234,7 @@ By default, the source directory for blocks is `./includes/blocks/`. This can be
 ### WordPress Editor Styles
 
 By default, wdc-toolkit will scope any css file named `editor-style.css` files with the
-`.editor-styles-wrapper` class. Take a look at the default [postcss config](https://github.com/10up/wdc-toolkit/blob/develop/packages/toolkit/config/postcss.config.js#L21) for more information.
+`.editor-styles-wrapper` class. Take a look at the default [postcss config](https://github.com/stefanue/wdc-toolkit/blob/develop/packages/toolkit/config/postcss.config.js#L21) for more information.
 
 ## <a id="fast-refresh"></a>HMR and Fast Refresh
 
@@ -274,11 +271,11 @@ $is_local     = $is_local_env || $is_local_url;
 
 if ( $is_local && file_exists( __DIR__ . '/dist/fast-refresh.php' ) ) {
 	require_once __DIR__ . '/dist/fast-refresh.php';
-	TenUpToolkit\set_dist_url_path( basename( __DIR__ ), TENUP_THEME_DIST_URL, TENUP_THEME_DIST_PATH );
+	WDCToolkit\set_dist_url_path( basename( __DIR__ ), WDC_THEME_DIST_URL, WDC_THEME_DIST_PATH );
 }
 ```
 
-Replace `TENUP_THEME_DIST_URL` and `TENUP_THEME_DIST_PATH` with the path to the url and the path to the `dist` folder.
+Replace `WDC_THEME_DIST_URL` and `WDC_THEME_DIST_PATH` with the path to the url and the path to the `dist` folder.
 
 - Then run `wdc-toolkit watch --hot`
 
@@ -286,7 +283,7 @@ Make sure to reload the page after running wdc-toolkit as the `dist/fast-refresh
 
 ### HTTPS and Certificates
 
-In some setups (such as Laravel Valet), Websocket SSL connections will fail unless you explicitly tell webpack what cert files to use (see issue [290](https://github.com/10up/wdc-toolkit/issues/290)).
+In some setups (such as Laravel Valet), Websocket SSL connections will fail unless you explicitly tell webpack what cert files to use.
 
 If you aren't already customizing webpack in your project, create a new `webpack.config.js` file in the root of your project/theme. You need to specify the cert, key, and ca properties for the config.devServer.https object.
 
@@ -314,13 +311,13 @@ module.exports = config;
 If HMR/Fast Refresh is not working for you these steps can help you debug the problem:
 
 - Run a regular build (without `--hot`) does your code work properly?
-- Check if `tenup-toolkit-react-refresh-runtime` and `tenup-toolkit-hmr-runtime` are being enqueued on the block editor screen. If they aren't, ensure you're properly including `dist/fast-refresh.php` and setting up the constants properly.
+- Check if `wdc-toolkit-react-refresh-runtime` and `wdc-toolkit-hmr-runtime` are being enqueued on the block editor screen. If they aren't, ensure you're properly including `dist/fast-refresh.php` and setting up the constants properly.
 - Some code changes might cause a full-page refresh (e.g: changing arguments of `registerBlockType`). This is a known limitation.
 - If your CSS is not hot reloading, ensure you're including your block css file (`import './style.css`) from your block's entry point.
 - If you're extending the webpack config, does it work with the original webpack config? If so your changes might be breaking fast refresh.
 - Are you using a `.test` domain? if not make sure to set `devURL` under `wdc-toolkit` namespace in `package.json`.
 - If your front-end css is not hot reloading, make sure the CSS is not an entry point on its own (i.e. isn't listed in the entry section in package.json) but instead is imported by a JS file. Both the JS file and the CSS file should be enqueued on the front-end.
-  - Additionally, check if both `tenup-toolkit-hmr-runtime` and `tenup-toolkit-react-refresh-runtime` are enqueued the front-end.
+  - Additionally, check if both `wdc-toolkit-hmr-runtime` and `wdc-toolkit-react-refresh-runtime` are enqueued the front-end.
 - If you're overriding `babel.config.js` you will need to make sure it is including `react-refresh/babel` plugin.
 
 ```js
@@ -339,7 +336,7 @@ module.exports = (api) => {
 
 ## <a id="linting"></a> Linting
 
-wdc-toolkit comes with eslint, prettier and stylelint set up out of the box. It uses [10up's eslint config](https://github.com/10up/wdc-toolkit/tree/develop/packages/eslint-config) and [10up's stylelint config](https://github.com/10up/wdc-toolkit/tree/develop/packages/stylelint-config) and exposes the following commands:
+wdc-toolkit comes with eslint, prettier and stylelint set up out of the box. It uses [WDC eslint config](https://github.com/stefanue/wdc-toolkit/tree/develop/packages/eslint-config) and [WDC stylelint config](https://github.com/stefanue/wdc-toolkit/tree/develop/packages/stylelint-config) and exposes the following commands:
 `wdc-toolkit lint-js`, `wdc-toolkit format-js` and `wdc-toolkit lint-style`.
 
 wdc-toolkit can lint JavaScript, TypeScript and JSX without any additional configuration. It's recommended to add a npm script to your `package.json`.
@@ -370,7 +367,7 @@ module.exports = {
 };
 ```
 
-You can extend any of the [available configs](https://github.com/10up/wdc-toolkit/tree/develop/packages/eslint-config#available-eslint-configs) and enable/disable rules based on your project needs.
+You can extend any of the [available configs](https://github.com/stefanue/wdc-toolkit/tree/develop/packages/eslint-config#available-eslint-configs) and enable/disable rules based on your project needs.
 
 ```javascript
 // stylelint.config.js
@@ -456,7 +453,7 @@ It's strongly recommended to enable VSCode settings to format your JavaScript co
     },
 ```
 
-10up's eslint config integrated with prettier through an ESLint plugin so having the vscode prettier extension is not needed and in fact, it must be disabled to avoid conflicts when saving and formatting the code.
+WDC eslint config integrated with prettier through an ESLint plugin so having the vscode prettier extension is not needed and in fact, it must be disabled to avoid conflicts when saving and formatting the code.
 
 ## <a id="libraries"></a>Authoring Libraries/Packages
 
@@ -504,7 +501,7 @@ Since version `4.0.0` you can specify multiple entry points in package mode with
 
 ```json
   "wdc-toolkit": {
-    "libraryName": "TenUpAccordion",
+    "libraryName": "WDCAccordion",
     "entry": {
       "index": "./src/index.ts",
       "config": "./src/config/inde.ts",
@@ -537,7 +534,7 @@ wdc-toolkit is very extensible and pretty much all config files can be overridde
 
 ### Customizing the Webpack config
 
-In general, we don't recommend customizing the webpack config, the default webpack config and the 10up-toolkits options should provide all that's needed
+In general, we don't recommend customizing the webpack config, the default webpack config and the wdc-toolkits options should provide all that's needed
 for most projects. However, in case you need to modify the webpack config you can to so by creating a `webpack.config.js` file at the root of your project.
 
 The example below will update the webpack config so that wdc-toolkit processes and transpiles `@vendor/your-custom-package`. This would be required you publishing an untranspiled package.
@@ -912,10 +909,3 @@ wdc-toolkit will compile any Linaria code from the `index.js` entry point to `in
 
 **IMPORTANT**: We do not currently recommend using Linaria for standard WordPress builds. In a headless build the block rendering and front-end styles are handled outside of WordPress, hence why the `block.json` above only cares about the editor script and style.
 
-## Support Level
-
-**Active:** 10up is actively working on this, and we expect to continue work for the foreseeable future including keeping tested up to the most recent version of WordPress. Bug reports, feature requests, questions, and pull requests are welcome.
-
-## Like what you see?
-
-<a href="http://10up.com/contact/"><img src="https://10up.com/uploads/2016/10/10up-Github-Banner.png" alt="Work with 10up, we create amazing websites and tools that make content management simple and fun using open source tools and platforms"></a>

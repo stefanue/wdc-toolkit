@@ -84,7 +84,7 @@
             "optional": true
         }
     },
-    "description": "Collection of reusable scripts for 10up development.",
+    "description": "Collection of reusable scripts for development.",
     "engines": {
         "node": ">=16",
         "npm": ">=6.9"

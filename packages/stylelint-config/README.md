@@ -1,8 +1,4 @@
-# 10up Stylelint Config
-
-> At 10up, we strive to provide digital products that yield a top-notch user experience. In order to improve both our efficiency and consistency, we need to standardize what we use and how we use it. This theme scaffold allows us to share initial set up procedures to make sure all projects can get up and running as quickly as possible while closely adhering to 10up's high quality standards.
-
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
+# WDC Stylelint Config
 
 
 ## Dependencies
@@ -26,7 +22,7 @@ npm install stylelint --save-dev
 yarn add stylelint
 ```
 
-Then install the 10up Stylelint config:
+Then install the WDC Stylelint config:
 
 ```bash
 // NPM
@@ -48,7 +44,7 @@ Add the following to your `.stylelintrc` file:
 
 ### SCSS:
 
-By default, 10up Stylelint Config does not support out-the-box support for `scss` based projects. That being said, it is not difficult to add support by following the below process:
+By default, WDC Stylelint Config does not support out-the-box support for `scss` based projects. That being said, it is not difficult to add support by following the below process:
 
 Install the `stylelint-config-standard-scss` dependency:
 
@@ -102,8 +98,6 @@ plugins: [
   } ),
 ]
 ```
-
-Read more about these options at [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin), [the main stylelint documentation](https://stylelint.io/) and [postcss-loader](https://github.com/postcss/postcss-loader). That should be all you need, but if there are any errors in this documentation, [please file an issue and let us know](https://github.com/10up/stylelint-config/issues/new)!
 
 ## Autofixing
 

@@ -22,7 +22,7 @@ const getPackagePath = () => pkgPath;
 const hasPackageProp = (prop) => pkg && Object.prototype.hasOwnProperty.call(pkg, prop);
 
 /**
- * Returns the 10up scripts version directly from package.json
+ * Returns the wdc scripts version directly from package.json
  *
  * @returns {number}
  */

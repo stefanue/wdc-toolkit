@@ -3,8 +3,8 @@
  */
 const {
 	getBuildFiles,
-	getTenUpScriptsConfig,
-	getTenUpScriptsPackageBuildConfig,
+	getWDCScriptsConfig,
+	getWDCScriptsPackageBuildConfig,
 } = require('../utils');
 
 const {
@@ -21,8 +21,8 @@ const {
 	getDevServer,
 } = require('./webpack');
 
-const projectConfig = getTenUpScriptsConfig();
-const packageConfig = getTenUpScriptsPackageBuildConfig();
+const projectConfig = getWDCScriptsConfig();
+const packageConfig = getWDCScriptsPackageBuildConfig();
 const { source, main } = packageConfig;
 const buildFiles = getBuildFiles();
 

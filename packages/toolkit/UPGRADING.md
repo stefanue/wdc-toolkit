@@ -34,7 +34,7 @@ The minimum Node.js version is 12.x, however Node.js 16 is strongly recommended.
 
 In theory wdc-toolkit can be installed with any npm version >= 6, however we don't recommend npm < 7. 
 
-~~If you're getting an install error due to conflicting prettier dependencies, we recommend updating to npm 8.  There's an [known issue](https://github.com/WordPress/gutenberg/issues/39208) with `@wordpress/eslint-plugin` that can break installations of wdc-toolkit when using npm < 8. Alternatively if you're not on npm 8, you can try pinning `prettier` to `2.4.1` in your package.json to force npm install the version toolkit uses.~~ Fixed in [#166](https://github.com/10up/wdc-toolkit/pull/166)
+~~If you're getting an install error due to conflicting prettier dependencies, we recommend updating to npm 8.  There's an [known issue](https://github.com/WordPress/gutenberg/issues/39208) with `@wordpress/eslint-plugin` that can break installations of wdc-toolkit when using npm < 8. Alternatively if you're not on npm 8, you can try pinning `prettier` to `2.4.1` in your package.json to force npm install the version toolkit uses.~~ 
 
 ### BrowserSync packages have been removed by default.
 
@@ -50,7 +50,7 @@ If you're using NPM workspaces, make sure to specify the desired workspace.
 npm install --save-dev browser-sync browser-sync-webpack-plugin -w=workspace-name
 ```
 
-Browser sync will be automatically enabled if a `devURL` is specified and those packages are installed when you run `wdc-toolkit watch` and `10up-tooking start`.
+Browser sync will be automatically enabled if a `devURL` is specified and those packages are installed when you run `wdc-toolkit watch` and `wdc-toolkit start`.
 
 ### The post css plugin `postcss-object-fit-image` has been removed
 
@@ -101,5 +101,3 @@ return config;
 ## HMR & Fast Refresh
 
 Check out the [docs](./README.md#fast-refresh) for guidance on how to enable HMR and Fast Refresh.
-
-Additionally, check out this [PR](https://github.com/10up/wp-scaffold/pull/87) that enables HMR & Fast Refresh in 10up's wp-scaffold.
