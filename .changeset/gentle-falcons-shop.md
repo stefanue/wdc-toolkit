@@ -1,5 +1,5 @@
 ---
-"10up-toolkit": patch
+"wdc-toolkit": patch
 ---
 
 Add `.local` to the default list of supported domains.

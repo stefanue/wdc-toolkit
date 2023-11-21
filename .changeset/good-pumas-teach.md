@@ -1,5 +1,5 @@
 ---
-"10up-toolkit": major
+"wdc-toolkit": major
 ---
 
 update default value of `useBlockAssets` to true. If you are not ready for it yet. Set `useBlockAssets` to false in your 10up-toolkit `package.json` config.
@@ -7,7 +7,7 @@ update default value of `useBlockAssets` to true. If you are not ready for it ye
 ```json
 {
 	"name": "your-project",
-	"10up-toolkit": {
+	"wdc-toolkit": {
 		"useBlockAssets": false
 	}
 }
