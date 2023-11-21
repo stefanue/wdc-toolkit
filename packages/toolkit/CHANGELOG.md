@@ -1,5 +1,33 @@
 # Changelog
 
+## 7.0.0
+
+### Major Changes
+
+- aa08ead: update default value of `useBlockAssets` to true. If you are not ready for it yet. Set `useBlockAssets` to false in your wdc-toolkit `package.json` config.
+
+  ```json
+  {
+    "name": "your-project",
+    "wdc-toolkit": {
+      "useBlockAssets": false
+    }
+  }
+  ```
+
+- aa08ead: Update linaria to next major and fix an issue with react-refresh plugin. Also drops support for node 14.
+
+### Minor Changes
+
+- aa08ead: Add support to configure Webpack's publicPath
+
+### Patch Changes
+
+- aa08ead: Add `.local` to the default list of supported domains.
+- aa08ead: Stop using react fast refresh fork in favor of the upstream package
+- Updated dependencies [aa08ead]
+  - @wdcthemes/stylelint-config@3.0.0
+
 ## 6.0.0
 
 ### Major Changes
