@@ -18,7 +18,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/10up/10up-toolkit.git",
+        "url": "git+https://github.com/stefanue/wdc-toolkit.git",
         "directory": "packages/babel-preset-default"
     },
     "bugs": {
