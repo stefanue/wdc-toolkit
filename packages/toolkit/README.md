@@ -798,61 +798,6 @@ wdc-toolkit build --external=react,react-dom
 An interesting use case for this is when you want to generate a UMD bundle that ships with all dependencies so that it
 can be used by simply loading the JavaScript in the browser.
 
-As an example, consider the following `package.json`
-
-```json
-{
-	"name": "@wdc/component-accordion",
-	"version": "2.0.1",
-	"author": "10up",
-	"description": "Accessible accordion component.",
-	"main": "dist/index.js",
-	"umd:main": "dist/index.umd.js",
-	"source": "src/index.js",
-	"style": "./dist/index.css",
-	"scripts": {
-		"watch": "concurrently \"npm run build:modern -- --watch\" \"npm run build:umd -- --watch\"",
-		"start": "wdc-toolkit start -i=src/app.js --dev-server",
-		"build": "npm run build:modern && npm run build:umd",
-		"build:modern": "wdc-toolkit build -f=commonjs",
-		"build:umd": "wdc-toolkit build -f=umd -i=src/index.umd.js --name=TenUpAccordion --external=none"
-	},
-	"dependencies": {
-		"core-js": "^3.0.0"
-	},
-	"devDependencies": {
-		"wdc-toolkit": "1.0.7",
-		"concurrently": "^5.3.0"
-	}
-}
-```
-
-Running `npm run build:modern` will only generate a bundle suitable for bundlers consumption and `npm run build:umd` will generate
-a bundle that's suitable for both bundlers and direct inclusion in browsers, note that `---external=none` is being passed and that effectively tells
-wdc-toolkit to inline all the dependencies. So someone loading `index.umd.js` don't need to load `core-js`.
-
-The UMD bundle could then be used like so:
-
-```html
-<script src="https://unpkg.com/@wdc/component-accordion@2.0.1/dist/index.umd.js"></script>
-<script type="text/javascript">
-	const myAccordion = new window.TenUpAccordion.Accordion(".accordion", {
-		onCreate: function () {
-			console.log("onCreated");
-		},
-		onOpen: function () {
-			console.log("onOpen");
-		},
-		onClose: function () {
-			console.log("onClose");
-		},
-		onToggle: function () {
-			console.log("onToggle");
-		},
-	});
-</script>
-```
-
 ### include
 
 The `--include` option is useful if you want to instruct wdc-toolkit to transpile a npm package (which are excluded by default) as part of your build process.

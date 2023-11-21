@@ -1,4 +1,0 @@
-{
-    "extends": "../../packages/toolkit/config/default-tsconfig.json",
-    "include": ["src/**/*.ts"],
-}
