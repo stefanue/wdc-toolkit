@@ -53,7 +53,7 @@
 
 - a930021: Fix: prettier peerDependency range
 - Updated dependencies [a930021]
-  - @wdc/eslint-config@3.1.1-next.0
+  - @wdc/eslint-config@3.1.1
 
 ## 5.2.1-next.0
 
