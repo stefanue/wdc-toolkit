@@ -7,7 +7,6 @@
         "@wdc/eslint-plugin": "2.0.0",
         "@wdc/stylelint-config": "2.0.5",
         "wdc-toolkit": "5.2.2",
-        "tenup-theme": "1.1.5-next.7",
         "@wdc/component-accordion": "2.1.5",
         "@wdc/library-ts-test": "2.1.5"
     },

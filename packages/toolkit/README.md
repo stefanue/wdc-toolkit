@@ -95,7 +95,7 @@ Here's how a `package.json` would look like for using wdc-toolkit this way:
 
 ```json
 {
-	"name": "tenup-theme",
+	"name": "wdc-theme",
 	"version": "1.0.0",
 	"scripts": {
 		"start": "wdc-toolkit build --watch",

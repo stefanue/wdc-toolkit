@@ -10,5 +10,5 @@
     "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
         "onlyUpdatePeerDependentsWhenOutOfRange": true
     },
-    "ignore": ["tenup-theme", "@wdc/component-accordion", "@wdc/library-ts-test"]
+    "ignore": ["@wdc/component-accordion", "@wdc/library-ts-test"]
 }
