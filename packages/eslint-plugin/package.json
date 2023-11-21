@@ -1,6 +1,6 @@
 {
     "name": "@wdcthemes/eslint-plugin",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "ESLint plugin for WordPress development.",
     "author": "Stefan Vasiljevic",
     "license": "GPL-2.0-or-later",
@@ -45,8 +45,8 @@
         "requireindex": "^1.2.0"
     },
     "devDependencies": {
-        "@wdcthemes/babel-preset-default": "^2.1.0",
-        "@wdcthemes/eslint-config": "^3.1.1"
+        "@wdcthemes/babel-preset-default": "^2.1.1",
+        "@wdcthemes/eslint-config": "^3.1.2"
     },
     "peerDependencies": {
         "@babel/core": ">=7",
