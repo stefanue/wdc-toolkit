@@ -1,5 +1,31 @@
 # Changelog
 
+## 8.0.0
+
+### Major Changes
+
+- aa08ead: update default value of `useBlockAssets` to true. If you are not ready for it yet. Set `useBlockAssets` to false in your wdc-toolkit `package.json` config.
+
+  ```json
+  {
+    "name": "your-project",
+    "wdc-toolkit": {
+      "useBlockAssets": false
+    }
+  }
+  ```
+
+- aa08ead: Update linaria to next major and fix an issue with react-refresh plugin. Also drops support for node 14.
+
+### Minor Changes
+
+- aa08ead: Add support to configure Webpack's publicPath
+
+### Patch Changes
+
+- aa08ead: Add `.local` to the default list of supported domains.
+- aa08ead: Stop using react fast refresh fork in favor of the upstream package
+
 ## 7.0.0
 
 ### Major Changes
@@ -288,7 +314,7 @@
 
 ### Minor Changes
 
-- c206d75: Remove grid autoprefixer. 
+- c206d75: Remove grid autoprefixer.
 - f33afc6: Fix react-refresh-runtime entrypoint
 
 ### Patch Changes
@@ -301,23 +327,23 @@
 
 ### Minor Changes
 
-- c206d75: Remove grid autoprefixer. 
+- c206d75: Remove grid autoprefixer.
 - f33afc6: Fix react-refresh-runtime entrypoint
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
 ## 4.0.0
 
-- Changed: wdc-toolkit no longer transpiles `@wdcthemes/block-components`. Make sure to use the latest version of `@wdcthemes/block-components` that already ships transpiled code. 
-- Changed [BREAKING CHANGE]: Stop injecting `wp-polyfill` as dependecy of scripts built by wdc-toolkit. 
-- Updated: Dependencies 
-- Changed [BREAKING CHANGE]: Stylelint and eslint are now peerDependencies. This is a breaking change only for those not using npm >= 7. 
+- Changed: wdc-toolkit no longer transpiles `@wdcthemes/block-components`. Make sure to use the latest version of `@wdcthemes/block-components` that already ships transpiled code.
+- Changed [BREAKING CHANGE]: Stop injecting `wp-polyfill` as dependecy of scripts built by wdc-toolkit.
+- Updated: Dependencies
+- Changed [BREAKING CHANGE]: Stylelint and eslint are now peerDependencies. This is a breaking change only for those not using npm >= 7.
 
 ## 3.1.0
 
 - Fixed: `dev-server` flag
-- Added: `--target` option 
-- Added: Basic support for `exports` package.json field in package mode. 
+- Added: `--target` option
+- Added: Basic support for `exports` package.json field in package mode.
 
 ## 3.0.3
 
@@ -330,13 +356,13 @@ All notable changes to this project will be documented in this file, per [the Ke
 ## 3.0.0
 
 - Added - Introduced the `--analyze` option to the build to enable webpack-bundle-analyzer
-- Added - Introduced HMR and React Fast Refresh 
-- Added - Introduced `WDCToolkitTscPlugin` that runs tsc both on build and watch if tsconfig.json is present. 
+- Added - Introduced HMR and React Fast Refresh
+- Added - Introduced `WDCToolkitTscPlugin` that runs tsc both on build and watch if tsconfig.json is present.
 - Changed - Eslint and stylelint now only lint changed files when building with webpack (lintDirtyModulesOnly)
-- Changed - Replaced `imagemin-webpack-plugin` with `image-minimizer-webpack-plugin` 
+- Changed - Replaced `imagemin-webpack-plugin` with `image-minimizer-webpack-plugin`
 - Changed - Droped `imagemin` in favor of `squoosh`
 - Changed - Updated `@svgr/webpack` to 6.2.1 and removed `postcss-object-fit-image` as it's not necessary.
-- Deprecated - BrowserSync 
+- Deprecated - BrowserSync
 
 ## 2.1.0
 
@@ -358,13 +384,13 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 1.0.12
 
-- Fixed: BrowserSync Config 
-- Fixed: webpack watch command 
+- Fixed: BrowserSync Config
+- Fixed: webpack watch command
 - Updated deps
 
 ## 1.0.11
 
-- Fixed: Allows passing a `--port` flag to browser-sync `wdc-toolkit start|watch --port=3002` 
+- Fixed: Allows passing a `--port` flag to browser-sync `wdc-toolkit start|watch --port=3002`
 - Fixed: dev-server public path
 
 ## 1.0.10
@@ -373,7 +399,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 1.0.9
 
-- Updated deps 
+- Updated deps
 - Remove husky from wdc-toolkit [81] (Updated: Husky to 6.x)
 
 ## 1.0.8
@@ -383,8 +409,8 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 1.0.7
 
-- Fixed: Babel error when running jest. 
-- Added: Webpack Dev Server 
+- Fixed: Babel error when running jest.
+- Added: Webpack Dev Server
 
 ## 1.0.6
 
@@ -392,11 +418,11 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 1.0.5
 
-- Fixed: Regex in asset/resources. 
+- Fixed: Regex in asset/resources.
 - Fixed: Babel transpilation for publishing packages `["sourceType": "unambiguous"]`.
-- Fixed: Webpack Externals definition 
+- Fixed: Webpack Externals definition
 - Update: Prettier to 1.3.0 and stop using version range.
-- Added: Support for CSS Modules. 
+- Added: Support for CSS Modules.
 
 ## 1.0.4
 
@@ -429,11 +455,11 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## 1.3.3
 
-- Disables webpack css-loader url resolution 
-- Only load and run the postcss-editor-styles plugin when processing editor-style.css 
+- Disables webpack css-loader url resolution
+- Only load and run the postcss-editor-styles plugin when processing editor-style.css
 
 ## 1.3.2
 
-- Fixes a bug where webpack was not targeting the same browsers as babel, causing code to not run on older browsers like IE 11. 
-- Updates eslint to 2.3.4 to address 
+- Fixes a bug where webpack was not targeting the same browsers as babel, causing code to not run on older browsers like IE 11.
+- Updates eslint to 2.3.4 to address
 - Updates postcss.config.js to include missing packages and to fix a bug where editor styles wasn't being wrapped with the `.editor-styles-wrapper` class.
