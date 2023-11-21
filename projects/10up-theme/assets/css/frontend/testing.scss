@@ -1,0 +1,10 @@
+// Test comment
+@import url("./components/sass-component.scss");
+
+.test-class {
+	color: var(--c-black);
+
+	&.sub-class {
+		color: var(--c-white);
+	}
+}
