@@ -13,7 +13,10 @@ module.exports = ({ file, env }) => {
 				},
 			},
 			"postcss-nested": {},
-			"postcss-scss": {},
+			"postcss-current-selector": {
+				symbol: "*@",
+			},
+			"postcss-nested-ancestors": {},
 		},
 	};
 
