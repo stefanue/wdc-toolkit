@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.1.0
+
+### Minor Changes
+
+- 38d3935: Bump ver
+
 ## 7.0.0
 
 ### Major Changes
