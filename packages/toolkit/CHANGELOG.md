@@ -1,5 +1,11 @@
 # Changelog
 
+## 17.0.0
+
+### Major Changes
+
+- 59ad2da: Bump versions
+
 ## 17.0.0-next.0
 
 ### Major Changes

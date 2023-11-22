@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.0
+
+### Minor Changes
+
+- 59ad2da: Bump versions
+
 ## 2.2.0-next.0
 
 ### Minor Changes
