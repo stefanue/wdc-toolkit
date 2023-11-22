@@ -1,34 +1,41 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = ({ file, env }) => {
 	const config = {
 		plugins: {
-			'postcss-import': {},
-			'postcss-mixins': {},
-			'postcss-preset-env': {
+			"postcss-import": {},
+			"postcss-mixins": {},
+			"postcss-preset-env": {
 				stage: 0,
 				features: {
-					'custom-properties': false,
+					"custom-properties": false,
 				},
+			},
+			"postcss-bem": {
+				style: "bem",
 			},
 		},
 	};
 
 	// Only load postcss-editor-styles plugin when we're processing the editor-style.css file.
-	if (path.basename(file) === 'editor-style.css') {
-		config.plugins['postcss-editor-styles'] = {
-			scopeTo: '.editor-styles-wrapper',
-			ignore: [':root', '.edit-post-visual-editor.editor-styles-wrapper', '.wp-toolbar'],
-			remove: ['html', ':disabled', '[readonly]', '[disabled]'],
-			tags: ['button', 'input', 'label', 'select', 'textarea', 'form'],
+	if (path.basename(file) === "editor-style.css") {
+		config.plugins["postcss-editor-styles"] = {
+			scopeTo: ".editor-styles-wrapper",
+			ignore: [
+				":root",
+				".edit-post-visual-editor.editor-styles-wrapper",
+				".wp-toolbar",
+			],
+			remove: ["html", ":disabled", "[readonly]", "[disabled]"],
+			tags: ["button", "input", "label", "select", "textarea", "form"],
 		};
 	}
 
 	config.plugins.cssnano =
-		env === 'production'
+		env === "production"
 			? {
 					preset: [
-						'default',
+						"default",
 						{
 							autoprefixer: false,
 							calc: {
