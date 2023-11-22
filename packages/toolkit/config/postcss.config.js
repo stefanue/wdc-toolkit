@@ -12,6 +12,8 @@ module.exports = ({ file, env }) => {
 					"custom-properties": false,
 				},
 			},
+			"postcss-nested": {},
+			"postcss-scss": {},
 		},
 	};
 
