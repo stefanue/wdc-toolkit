@@ -61,17 +61,12 @@ module.exports = {
 		"length-zero-no-unit": true,
 		"no-descending-specificity": null,
 		"number-max-precision": 6,
-		"property-no-vendor-prefix": "never",
-		"media-feature-range-notation": "never",
-		"value-no-vendor-prefix": "never",
+		"property-no-vendor-prefix": null,
+		"media-feature-range-notation": null,
+		"value-no-vendor-prefix": null,
 		"order/properties-alphabetical-order": null,
 		"selector-not-notation": null,
-		"rule-empty-line-before": [
-			"none",
-			{
-				ignore: ["after-comment"],
-			},
-		],
+		"rule-empty-line-before": null,
 		"scale-unlimited/declaration-strict-value": [
 			"/color/",
 			{
