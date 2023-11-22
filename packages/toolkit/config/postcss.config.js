@@ -11,6 +11,9 @@ module.exports = ({ file, env }) => {
 					"custom-properties": false,
 				},
 			},
+			"postcss-nested-ancestors": {},
+			"postcss-nested": {},
+			"postcss-current-selector": {},
 		},
 	};
 

@@ -255,8 +255,11 @@ exports[`postcss.config.js build a proper postcss config file for non-editor sty
 Object {
   "plugins": Object {
     "cssnano": false,
+    "postcss-current-selector": Object {},
     "postcss-import": Object {},
     "postcss-mixins": Object {},
+    "postcss-nested": Object {},
+    "postcss-nested-ancestors": Object {},
     "postcss-preset-env": Object {
       "features": Object {
         "custom-properties": false,
@@ -287,8 +290,11 @@ Object {
         },
       ],
     },
+    "postcss-current-selector": Object {},
     "postcss-import": Object {},
     "postcss-mixins": Object {},
+    "postcss-nested": Object {},
+    "postcss-nested-ancestors": Object {},
     "postcss-preset-env": Object {
       "features": Object {
         "custom-properties": false,
@@ -303,6 +309,7 @@ exports[`postcss.config.js builds a proper postcss config file for editor styles
 Object {
   "plugins": Object {
     "cssnano": false,
+    "postcss-current-selector": Object {},
     "postcss-editor-styles": Object {
       "ignore": Array [
         ":root",
@@ -327,6 +334,8 @@ Object {
     },
     "postcss-import": Object {},
     "postcss-mixins": Object {},
+    "postcss-nested": Object {},
+    "postcss-nested-ancestors": Object {},
     "postcss-preset-env": Object {
       "features": Object {
         "custom-properties": false,
@@ -357,6 +366,7 @@ Object {
         },
       ],
     },
+    "postcss-current-selector": Object {},
     "postcss-editor-styles": Object {
       "ignore": Array [
         ":root",
@@ -381,6 +391,8 @@ Object {
     },
     "postcss-import": Object {},
     "postcss-mixins": Object {},
+    "postcss-nested": Object {},
+    "postcss-nested-ancestors": Object {},
     "postcss-preset-env": Object {
       "features": Object {
         "custom-properties": false,

@@ -1,5 +1,61 @@
 # Changelog
 
+## 15.0.0
+
+### Major Changes
+
+- 34c75d7: update default value of `useBlockAssets` to true. If you are not ready for it yet. Set `useBlockAssets` to false in your 10up-toolkit `package.json` config.
+
+  ```json
+  {
+    "name": "your-project",
+    "wdc-toolkit": {
+      "useBlockAssets": false
+    }
+  }
+  ```
+
+- 34c75d7: Update linaria to next major and fix an issue with react-refresh plugin. Also drops support for node 14.
+
+### Minor Changes
+
+- 34c75d7: Add support to configure Webpack's publicPath
+
+### Patch Changes
+
+- 34c75d7: Add `.local` to the default list of supported domains.
+- 34c75d7: Stop using react fast refresh fork in favor of the upstream package
+- Updated dependencies [34c75d7]
+  - @wdcthemes/stylelint-config@5.0.0
+
+## 14.0.0
+
+### Major Changes
+
+- 0ccb748: update default value of `useBlockAssets` to true. If you are not ready for it yet. Set `useBlockAssets` to false in your 10up-toolkit `package.json` config.
+
+  ```json
+  {
+    "name": "your-project",
+    "wdc-toolkit": {
+      "useBlockAssets": false
+    }
+  }
+  ```
+
+- 0ccb748: Update linaria to next major and fix an issue with react-refresh plugin. Also drops support for node 14.
+
+### Minor Changes
+
+- 0ccb748: Add support to configure Webpack's publicPath
+
+### Patch Changes
+
+- 0ccb748: Add `.local` to the default list of supported domains.
+- 0ccb748: Stop using react fast refresh fork in favor of the upstream package
+- Updated dependencies [0ccb748]
+  - @wdcthemes/stylelint-config@4.0.0
+
 ## 10.0.0
 
 ### Major Changes

@@ -9,7 +9,7 @@
 		"url": "git+https://github.com/stefanue/wdc-toolkit.git",
 		"directory": "packages/toolkit"
 	},
-	"version": "13.0.0",
+	"version": "15.0.0",
 	"bin": {
 		"wdc-toolkit": "bin/wdc-toolkit.js"
 	},
@@ -40,10 +40,13 @@
 		"mini-css-extract-plugin": "^2.7.5",
 		"minimist": "^1.2.8",
 		"postcss": "^8.4.31",
+		"postcss-current-selector": "^0.0.3",
 		"postcss-editor-styles": "^0.3.0",
 		"postcss-import": "^14.1.0",
 		"postcss-loader": "^7.3.0",
 		"postcss-mixins": "^9.0.4",
+		"postcss-nested": "^6.0.1",
+		"postcss-nested-ancestors": "^3.0.0",
 		"postcss-preset-env": "^7.8.3",
 		"prettier": "2.6.2",
 		"react-refresh": "^0.14.0",
@@ -67,14 +70,14 @@
 	"devDependencies": {
 		"@wdcthemes/babel-preset-default": "^2.1.0",
 		"@wdcthemes/eslint-config": "^3.1.1",
-		"@wdcthemes/stylelint-config": "^3.0.0"
+		"@wdcthemes/stylelint-config": "^5.0.0"
 	},
 	"peerDependencies": {
 		"@linaria/babel-preset": ">=4.3.3",
 		"@linaria/webpack-loader": ">=4.1.11",
 		"@wdcthemes/babel-preset-default": "^2.1.0",
 		"@wdcthemes/eslint-config": "^3.1.1",
-		"@wdcthemes/stylelint-config": "^3.0.0"
+		"@wdcthemes/stylelint-config": "^5.0.0"
 	},
 	"peerDependenciesMeta": {
 		"@linaria/webpack-loader": {
