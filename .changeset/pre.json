@@ -6,7 +6,7 @@
 		"@wdcthemes/eslint-config": "3.1.1",
 		"@wdcthemes/eslint-plugin": "2.0.0",
 		"@wdcthemes/stylelint-config": "3.0.0",
-		"wdc-toolkit": "5.2.2"
+		"wdc-toolkit": "13.0.0"
 	},
 	"changesets": [
 		"gentle-falcons-shop",
