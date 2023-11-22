@@ -11,6 +11,7 @@ module.exports = ({ file, env }) => {
 					"custom-properties": false,
 				},
 			},
+			"postcss-nesting": {},
 		},
 	};
 
