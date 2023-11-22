@@ -4,7 +4,9 @@
 
 ### Major Changes
 
-- 0ccb748: update default value of `useBlockAssets` to true. If you are not ready for it yet. Set `useBlockAssets` to false in your 10up-toolkit `package.json` config.
+
+- db1b3c2: update default value of `useBlockAssets` to true. If you are not ready for it yet. Set `useBlockAssets` to false in your 10up-toolkit `package.json` config.
+
 
   ```json
   {
@@ -15,16 +17,18 @@
   }
   ```
 
-- 0ccb748: Update linaria to next major and fix an issue with react-refresh plugin. Also drops support for node 14.
 
 ### Minor Changes
 
-- 0ccb748: Add support to configure Webpack's publicPath
+- db1b3c2: Add support to configure Webpack's publicPath
 
 ### Patch Changes
 
-- 0ccb748: Add `.local` to the default list of supported domains.
-- 0ccb748: Stop using react fast refresh fork in favor of the upstream package
+- db1b3c2: Add `.local` to the default list of supported domains.
+- db1b3c2: Stop using react fast refresh fork in favor of the upstream package
+- 0ccb748: Update linaria to next major and fix an issue with react-refresh plugin. Also drops support for node 14.
+
+
 - Updated dependencies [db1b3c2]
   - @wdcthemes/stylelint-config@6.0.0
 
