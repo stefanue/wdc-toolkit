@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.0-next.0
+
+### Minor Changes
+
+- 59ad2da: Bump versions
+
 ## 2.1.0
 
 ### Minor Changes
@@ -25,7 +31,6 @@ All notable changes to this project will be documented in this file, per [the Ke
 ## [1.2.1]
 
 - Updated deps
-
 
 ## [1.1.2]
 
