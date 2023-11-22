@@ -1,6 +1,6 @@
 {
     "name": "@wdcthemes/eslint-config",
-    "version": "3.2.0",
+    "version": "3.3.0",
     "description": "A shareable ESLint configuration",
     "publishConfig": {
         "access": "public"
@@ -38,7 +38,7 @@
         "wdc"
     ],
     "dependencies": {
-        "@wdcthemes/babel-preset-default": "^2.2.0"
+        "@wdcthemes/babel-preset-default": "^2.3.0"
     },
     "devDependencies": {
         "@wordpress/eslint-plugin": "^14.9.0",

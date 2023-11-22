@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.3.0
+
+### Minor Changes
+
+- 38d3935: Bump ver
+
+### Patch Changes
+
+- Updated dependencies [38d3935]
+  - @wdcthemes/babel-preset-default@2.3.0
+
 ## 3.2.0
 
 ### Minor Changes

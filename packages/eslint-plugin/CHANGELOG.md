@@ -1,5 +1,11 @@
 <!-- Learn how to maintain this file at https://github.com/WordPress/gutenberg/tree/HEAD/packages#maintaining-changelogs. -->
 
+## 2.2.0
+
+### Minor Changes
+
+- 38d3935: Bump ver
+
 ## 2.1.0
 
 ### Minor Changes

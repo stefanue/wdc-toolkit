@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.3.0
+
+### Minor Changes
+
+- 38d3935: Bump ver
+
 ## 2.2.0
 
 ### Minor Changes
