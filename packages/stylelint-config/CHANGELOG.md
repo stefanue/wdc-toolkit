@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.0.0
+
+### Major Changes
+
+- db1b3c2: Upgrading `stylelint` to version `15.0.0` and decouple from `@wordpress/stylelint-config`.
+
 ## 5.0.0
 
 ### Major Changes
