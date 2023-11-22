@@ -1,0 +1,19 @@
+{
+	"mode": "exit",
+	"tag": "next",
+	"initialVersions": {
+		"@wdcthemes/babel-preset-default": "2.1.0",
+		"@wdcthemes/eslint-config": "3.1.1",
+		"@wdcthemes/eslint-plugin": "2.0.0",
+		"@wdcthemes/stylelint-config": "5.0.0",
+		"wdc-toolkit": "15.0.0"
+	},
+	"changesets": [
+		"gentle-falcons-shop",
+		"good-pumas-teach",
+		"six-crabs-cry",
+		"smooth-trees-pump",
+		"stale-impalas-return",
+		"tiny-toes-dream"
+	]
+}
