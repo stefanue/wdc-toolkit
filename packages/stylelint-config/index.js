@@ -13,7 +13,7 @@ module.exports = {
 		// 		ignore: ['after-comment'],
 		// 	},
 		// ],
-		"at-rule-empty-line-before": false,
+		"at-rule-empty-line-before": null,
 		"at-rule-no-unknown": [
 			true,
 			{
@@ -28,7 +28,7 @@ module.exports = {
 				ignore: ["stylelint-commands"],
 			},
 		],
-		"custom-property-pattern": false,
+		"custom-property-pattern": null,
 		// 'custom-property-pattern': [
 		// 	'^([a-z][a-z0-9]*)(-[a-z0-9]+)*$|^wp--([a-z][a-z0-9]*)(--[a-z0-9]+)*$',
 		// 	{
@@ -64,8 +64,8 @@ module.exports = {
 		"property-no-vendor-prefix": "never",
 		"media-feature-range-notation": "never",
 		"value-no-vendor-prefix": "never",
-		"order/properties-alphabetical-order": false,
-		"selector-not-notation": false,
+		"order/properties-alphabetical-order": null,
+		"selector-not-notation": null,
 		"rule-empty-line-before": [
 			"none",
 			{
