@@ -2,7 +2,6 @@ const path = require("path");
 
 module.exports = ({ file, env }) => {
 	const config = {
-		syntax: "postcss-scss",
 		plugins: {
 			"postcss-import": {},
 			"postcss-mixins": {},
@@ -12,8 +11,6 @@ module.exports = ({ file, env }) => {
 					"custom-properties": false,
 				},
 			},
-			"postcss-nested": {},
-			"postcss-scss": {},
 		},
 	};
 
