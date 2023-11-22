@@ -9,7 +9,7 @@
         "url": "git+https://github.com/stefanue/wdc-toolkit.git",
         "directory": "packages/toolkit"
     },
-    "version": "9.0.0",
+    "version": "10.0.0",
     "bin": {
         "wdc-toolkit": "bin/wdc-toolkit.js"
     },
