@@ -1,27 +1,27 @@
 {
-    "name": "@wdc/toolkit",
-    "private": true,
-    "author": "WDC",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/stefanue/wdc-toolkit.git"
-    },
-    "scripts": {
-        "build": "npm run build --workspaces --if-present",
-        "test": "npm run test --workspaces --if-present",
-        "lint": "npm run lint --workspaces --if-present",
-        "dev": "npm run wp-env start -w=projects/wdc-theme -- --xdebug  && npm run start -w=projects/wdc-theme"
-    },
-    "workspaces": [
-        "packages/*"
-    ],
-    "bundleDependencies": false,
-    "devDependencies": {
-        "@changesets/cli": "^2.26.1"
-    },
-    "description": "Collection of reusable scripts for development.",
-    "engines": {
-        "node": ">=14",
-        "npm": ">=7"
-    }
+	"name": "@wdc/toolkit",
+	"private": true,
+	"author": "WDC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/stefanue/wdc-toolkit.git"
+	},
+	"scripts": {
+		"build": "npm run build --workspaces --if-present",
+		"test": "npm run test --workspaces --if-present",
+		"lint": "npm run lint --workspaces --if-present",
+		"dev": "npm run wp-env start -w=projects/wdc-theme -- --xdebug  && npm run start -w=projects/wdc-theme"
+	},
+	"workspaces": [
+		"packages/*"
+	],
+	"bundleDependencies": false,
+	"devDependencies": {
+		"@changesets/cli": "^2.26.1"
+	},
+	"description": "Collection of reusable scripts for development.",
+	"engines": {
+		"node": ">=14",
+		"npm": ">=7"
+	}
 }
