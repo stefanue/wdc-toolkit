@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.2.0-next.0
+
+### Minor Changes
+
+- 59ad2da: Bump versions
+
+### Patch Changes
+
+- Updated dependencies [59ad2da]
+  - @wdcthemes/babel-preset-default@2.2.0-next.0
+
 ## 3.1.1
 
 ### Patch Changes
