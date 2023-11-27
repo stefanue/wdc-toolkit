@@ -1,5 +1,25 @@
 # Changelog
 
+## 17.0.0-next.4
+
+### Major Changes
+
+- 949fb3e: New ver
+- 8816220: Update ver
+
+### Minor Changes
+
+- 0b7117c: update
+
+### Patch Changes
+
+- Updated dependencies [949fb3e]
+- Updated dependencies [8816220]
+- Updated dependencies [0b7117c]
+  - @wdcthemes/babel-preset-default@3.0.0-next.3
+  - @wdcthemes/stylelint-config@7.0.0-next.3
+  - @wdcthemes/eslint-config@4.0.0-next.3
+
 ## 17.0.0-next.3
 
 ### Major Changes
