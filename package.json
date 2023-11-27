@@ -10,7 +10,8 @@
 		"build": "npm run build --workspaces --if-present",
 		"test": "npm run test --workspaces --if-present",
 		"lint": "npm run lint --workspaces --if-present",
-		"dev": "npm run wp-env start -w=projects/wdc-theme -- --xdebug  && npm run start -w=projects/wdc-theme"
+		"dev": "npm run wp-env start -w=projects/wdc-theme -- --xdebug  && npm run start -w=projects/wdc-theme",
+		"package": "changeset && changeset version && changeset publish"
 	},
 	"workspaces": [
 		"packages/*"
