@@ -1,5 +1,18 @@
 # Changelog
 
+## 17.0.0-next.2
+
+### Minor Changes
+
+- 0b7117c: update
+
+### Patch Changes
+
+- Updated dependencies [0b7117c]
+  - @wdcthemes/babel-preset-default@2.2.0-next.1
+  - @wdcthemes/stylelint-config@7.0.0-next.1
+  - @wdcthemes/eslint-config@3.2.0-next.1
+
 ## 17.0.0-next.1
 
 ### Minor Changes
