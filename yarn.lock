@@ -2164,9 +2164,9 @@
     "@typescript-eslint/types" "5.62.0"
     "eslint-visitor-keys" "^3.3.0"
 
-"@wdcthemes/babel-preset-default@^4.0.0", "@wdcthemes/babel-preset-default@file:/Users/stefan/Sites/localhost/wdc-toolkit/packages/babel-preset-default":
+"@wdcthemes/babel-preset-default@^5.0.0", "@wdcthemes/babel-preset-default@file:/Users/stefan/Sites/localhost/wdc-toolkit/packages/babel-preset-default":
   "resolved" "file:packages/babel-preset-default"
-  "version" "4.0.0"
+  "version" "5.0.0"
   dependencies:
     "@babel/core" "^7.21.8"
     "@babel/helper-plugin-utils" "^7.21.5"
@@ -2184,13 +2184,13 @@
     "eslint" "^8.40.0"
     "jest" "^27.5.1"
 
-"@wdcthemes/eslint-config@^5.0.0", "@wdcthemes/eslint-config@file:/Users/stefan/Sites/localhost/wdc-toolkit/packages/eslint-config":
+"@wdcthemes/eslint-config@^6.0.0", "@wdcthemes/eslint-config@file:/Users/stefan/Sites/localhost/wdc-toolkit/packages/eslint-config":
   "resolved" "file:packages/eslint-config"
-  "version" "5.0.0"
+  "version" "6.0.0"
   dependencies:
     "@babel/core" "^7.21.4"
     "@babel/eslint-parser" "^7.21.3"
-    "@wdcthemes/babel-preset-default" "^4.0.0"
+    "@wdcthemes/babel-preset-default" "^5.0.0"
     "@wordpress/eslint-plugin" "^14.9.0"
     "eslint" "^8.40.0"
     "eslint-config-airbnb" "^19.0.4"
@@ -2200,13 +2200,14 @@
     "eslint-plugin-jest" "^27.2.1"
     "eslint-plugin-jsdoc" "^39.9.1"
     "eslint-plugin-jsx-a11y" "^6.7.1"
+    "eslint-plugin-prettier" "^4.2.1"
     "eslint-plugin-react" "^7.32.2"
     "eslint-plugin-react-hooks" "^4.6.0"
-    "prettier" "^3.0.0"
+    "prettier" "^2.4.1"
 
 "@wdcthemes/eslint-plugin@file:/Users/stefan/Sites/localhost/wdc-toolkit/packages/eslint-plugin":
   "resolved" "file:packages/eslint-plugin"
-  "version" "4.0.0"
+  "version" "5.0.0"
   dependencies:
     "@babel/core" ">=7"
     "@babel/eslint-parser" "^7.19.1"
@@ -2221,9 +2222,9 @@
     "globals" "^13.20.0"
     "requireindex" "^1.2.0"
 
-"@wdcthemes/stylelint-config@^8.0.0", "@wdcthemes/stylelint-config@file:/Users/stefan/Sites/localhost/wdc-toolkit/packages/stylelint-config":
+"@wdcthemes/stylelint-config@^9.0.0", "@wdcthemes/stylelint-config@file:/Users/stefan/Sites/localhost/wdc-toolkit/packages/stylelint-config":
   "resolved" "file:packages/stylelint-config"
-  "version" "8.0.0"
+  "version" "9.0.0"
   dependencies:
     "@wdcthemes/eslint-config" "^5.0.0"
     "stylelint" "^15.0.0"
@@ -4901,7 +4902,7 @@
   dependencies:
     "prettier-linter-helpers" "^1.0.0"
 
-"eslint-plugin-prettier@^5.0.1":
+"eslint-plugin-prettier@^4.2.1":
   "integrity" "sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg=="
   "resolved" "https://registry.npmjs.org/eslint-plugin-prettier/-/eslint-plugin-prettier-5.0.1.tgz"
   "version" "5.0.1"
@@ -8946,15 +8947,15 @@
   dependencies:
     "fast-diff" "^1.1.2"
 
+"prettier@^2.4.1", "prettier@>=3.0.0":
+  "integrity" "sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw=="
+  "resolved" "https://registry.npmjs.org/prettier/-/prettier-3.1.0.tgz"
+  "version" "3.1.0"
+
 "prettier@^2.7.1", "prettier@>=1.13.0", "prettier@>=2":
   "integrity" "sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q=="
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.8.8.tgz"
   "version" "2.8.8"
-
-"prettier@^3.0.0", "prettier@>=3.0.0":
-  "integrity" "sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw=="
-  "resolved" "https://registry.npmjs.org/prettier/-/prettier-3.1.0.tgz"
-  "version" "3.1.0"
 
 "pretty-error@^4.0.0":
   "integrity" "sha512-AoJ5YMAcXKYxKhuJGdcvse+Voc6v1RgnsR3nWcYU7q4t6z0Q6T86sv5Zq8VIRbOWWFpvdGE83LtdSMNd+6Y0xw=="
@@ -11241,7 +11242,7 @@
 
 "wdc-toolkit@file:/Users/stefan/Sites/localhost/wdc-toolkit/packages/toolkit":
   "resolved" "file:packages/toolkit"
-  "version" "18.0.0"
+  "version" "19.0.0"
   dependencies:
     "@babel/core" "^7.21.8"
     "@babel/eslint-parser" "^7.21.8"
@@ -11282,7 +11283,7 @@
     "postcss-nested" "^6.0.1"
     "postcss-nested-ancestors" "^3.0.0"
     "postcss-preset-env" "^7.8.3"
-    "prettier" "2.6.2"
+    "prettier" "^3.0.0"
     "react-refresh" "^0.14.0"
     "read-pkg" "^5.2.0"
     "read-pkg-up" "^7.0.1"

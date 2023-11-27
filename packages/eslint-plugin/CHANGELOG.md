@@ -1,5 +1,17 @@
 <!-- Learn how to maintain this file at https://github.com/WordPress/gutenberg/tree/HEAD/packages#maintaining-changelogs. -->
 
+## 6.0.0
+
+### Major Changes
+
+- update
+
+### Patch Changes
+
+- Updated dependencies
+  - @wdcthemes/babel-preset-default@6.0.0
+  - @wdcthemes/eslint-config@7.0.0
+
 ## 5.0.0
 
 ### Major Changes
