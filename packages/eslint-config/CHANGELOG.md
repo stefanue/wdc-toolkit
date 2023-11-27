@@ -4,6 +4,17 @@
 
 ### Minor Changes
 
+- 0b7117c: update
+
+### Patch Changes
+
+- Updated dependencies [0b7117c]
+  - @wdcthemes/babel-preset-default@2.2.0-next.1
+
+## 3.2.0-next.1
+
+### Minor Changes
+
 - 38d3935: Bump ver
 
 ### Patch Changes
