@@ -1,6 +1,6 @@
 {
 	"name": "@wdcthemes/eslint-plugin",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "ESLint plugin for WordPress development.",
 	"author": "Stefan Vasiljevic",
 	"license": "GPL-2.0-or-later",
@@ -43,8 +43,8 @@
 		"eslint-plugin-react": "^7.32.2",
 		"globals": "^13.20.0",
 		"requireindex": "^1.2.0",
-		"@wdcthemes/babel-preset-default": "^3.0.0",
-		"@wdcthemes/eslint-config": "^4.0.0",
+		"@wdcthemes/babel-preset-default": "^4.0.0",
+		"@wdcthemes/eslint-config": "^5.0.0",
 		"@babel/core": ">=7",
 		"eslint": ">=8"
 	},

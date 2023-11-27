@@ -1,5 +1,16 @@
 # Changelog
 
+## 5.0.0
+
+### Major Changes
+
+- Update
+
+### Patch Changes
+
+- Updated dependencies
+  - @wdcthemes/babel-preset-default@4.0.0
+
 ## 4.0.0
 
 ### Major Changes

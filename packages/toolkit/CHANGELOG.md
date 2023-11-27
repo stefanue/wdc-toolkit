@@ -1,5 +1,18 @@
 # Changelog
 
+## 18.0.0
+
+### Major Changes
+
+- Update
+
+### Patch Changes
+
+- Updated dependencies
+  - @wdcthemes/babel-preset-default@4.0.0
+  - @wdcthemes/stylelint-config@8.0.0
+  - @wdcthemes/eslint-config@5.0.0
+
 ## 17.0.0
 
 ### Major Changes

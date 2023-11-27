@@ -1,5 +1,16 @@
 # Changelog
 
+## 8.0.0
+
+### Major Changes
+
+- Update
+
+### Patch Changes
+
+- Updated dependencies
+  - @wdcthemes/eslint-config@5.0.0
+
 ## 7.0.0
 
 ### Major Changes
