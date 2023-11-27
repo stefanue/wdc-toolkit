@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.0.0-next.1
+
+### Minor Changes
+
+- 38d3935: Bump ver
+
 ## 7.0.0-next.0
 
 ### Major Changes

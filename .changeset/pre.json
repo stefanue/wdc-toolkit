@@ -9,6 +9,7 @@
     "wdc-toolkit": "16.0.0"
   },
   "changesets": [
-    "blue-badgers-explode"
+    "blue-badgers-explode",
+    "small-weeks-buy"
   ]
 }
