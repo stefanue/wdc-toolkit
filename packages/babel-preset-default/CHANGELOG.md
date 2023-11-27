@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.0.0-next.2
+
+### Major Changes
+
+- 8816220: Update ver
+
+### Patch Changes
+
+- Updated dependencies [8816220]
+  - @wdcthemes/eslint-config@4.0.0-next.2
+
 ## 2.2.0-next.1
 
 ### Minor Changes
