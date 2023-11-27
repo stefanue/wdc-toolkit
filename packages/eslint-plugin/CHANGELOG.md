@@ -1,5 +1,17 @@
 <!-- Learn how to maintain this file at https://github.com/WordPress/gutenberg/tree/HEAD/packages#maintaining-changelogs. -->
 
+## 3.0.0-next.2
+
+### Major Changes
+
+- 8816220: Update ver
+
+### Patch Changes
+
+- Updated dependencies [8816220]
+  - @wdcthemes/babel-preset-default@3.0.0-next.2
+  - @wdcthemes/eslint-config@4.0.0-next.2
+
 ## 2.1.0-next.1
 
 ### Minor Changes

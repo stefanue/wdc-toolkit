@@ -1,5 +1,16 @@
 # Changelog
 
+## 4.0.0-next.2
+
+### Major Changes
+
+- 8816220: Update ver
+
+### Patch Changes
+
+- Updated dependencies [8816220]
+  - @wdcthemes/babel-preset-default@3.0.0-next.2
+
 ## 3.2.0-next.1
 
 ### Minor Changes

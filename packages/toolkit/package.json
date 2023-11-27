@@ -9,7 +9,7 @@
         "url": "git+https://github.com/stefanue/wdc-toolkit.git",
         "directory": "packages/toolkit"
     },
-    "version": "17.0.0-next.2",
+    "version": "17.0.0-next.3",
     "bin": {
         "wdc-toolkit": "bin/wdc-toolkit.js"
     },
@@ -66,9 +66,9 @@
         "webpack-dev-server": "^4.15.0",
         "webpack-sources": "^3.2.3",
         "webpackbar": "^5.0.2",
-        "@wdcthemes/babel-preset-default": "^2.2.0-next.1",
-        "@wdcthemes/eslint-config": "^3.2.0-next.1",
-        "@wdcthemes/stylelint-config": "^7.0.0-next.1",
+        "@wdcthemes/babel-preset-default": "^3.0.0-next.2",
+        "@wdcthemes/eslint-config": "^4.0.0-next.2",
+        "@wdcthemes/stylelint-config": "^7.0.0-next.2",
         "@linaria/babel-preset": ">=4.3.3",
         "@linaria/webpack-loader": ">=4.1.11"
     },
