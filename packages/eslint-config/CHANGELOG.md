@@ -1,6 +1,28 @@
 # Changelog
 
-## 3.3.0
+## 4.0.0-next.2
+
+### Major Changes
+
+- 8816220: Update ver
+
+### Patch Changes
+
+- Updated dependencies [8816220]
+  - @wdcthemes/babel-preset-default@3.0.0-next.2
+
+## 3.2.0-next.1
+
+### Minor Changes
+
+- 0b7117c: update
+
+### Patch Changes
+
+- Updated dependencies [0b7117c]
+  - @wdcthemes/babel-preset-default@2.2.0-next.1
+
+## 3.2.0-next.1
 
 ### Minor Changes
 
@@ -9,18 +31,7 @@
 ### Patch Changes
 
 - Updated dependencies [38d3935]
-  - @wdcthemes/babel-preset-default@2.3.0
-
-## 3.2.0
-
-### Minor Changes
-
-- 59ad2da: Bump versions
-
-### Patch Changes
-
-- Updated dependencies [59ad2da]
-  - @wdcthemes/babel-preset-default@2.2.0
+  - @wdcthemes/babel-preset-default@2.2.0-next.1
 
 ## 3.2.0-next.0
 

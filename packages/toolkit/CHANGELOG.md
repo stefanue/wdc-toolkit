@@ -1,16 +1,36 @@
 # Changelog
 
-## 17.1.0
+## 17.0.0-next.3
+
+### Major Changes
+
+- 8816220: Update ver
+
+### Patch Changes
+
+- Updated dependencies [8816220]
+  - @wdcthemes/babel-preset-default@3.0.0-next.2
+  - @wdcthemes/stylelint-config@7.0.0-next.2
+  - @wdcthemes/eslint-config@4.0.0-next.2
+
+## 17.0.0-next.2
+
+### Minor Changes
+
+- 0b7117c: update
+
+### Patch Changes
+
+- Updated dependencies [0b7117c]
+  - @wdcthemes/babel-preset-default@2.2.0-next.1
+  - @wdcthemes/stylelint-config@7.0.0-next.1
+  - @wdcthemes/eslint-config@3.2.0-next.1
+
+## 17.0.0-next.1
 
 ### Minor Changes
 
 - 38d3935: Bump ver
-
-## 17.0.0
-
-### Major Changes
-
-- 59ad2da: Bump versions
 
 ## 17.0.0-next.0
 

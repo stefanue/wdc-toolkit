@@ -1,16 +1,32 @@
 # Changelog
 
-## 2.3.0
+## 3.0.0-next.2
+
+### Major Changes
+
+- 8816220: Update ver
+
+### Patch Changes
+
+- Updated dependencies [8816220]
+  - @wdcthemes/eslint-config@4.0.0-next.2
+
+## 2.2.0-next.1
+
+### Minor Changes
+
+- 0b7117c: update
+
+### Patch Changes
+
+- Updated dependencies [0b7117c]
+  - @wdcthemes/eslint-config@3.2.0-next.1
+
+## 2.2.0-next.1
 
 ### Minor Changes
 
 - 38d3935: Bump ver
-
-## 2.2.0
-
-### Minor Changes
-
-- 59ad2da: Bump versions
 
 ## 2.2.0-next.0
 

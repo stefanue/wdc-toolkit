@@ -1,16 +1,34 @@
 <!-- Learn how to maintain this file at https://github.com/WordPress/gutenberg/tree/HEAD/packages#maintaining-changelogs. -->
 
-## 2.2.0
+## 3.0.0-next.2
+
+### Major Changes
+
+- 8816220: Update ver
+
+### Patch Changes
+
+- Updated dependencies [8816220]
+  - @wdcthemes/babel-preset-default@3.0.0-next.2
+  - @wdcthemes/eslint-config@4.0.0-next.2
+
+## 2.1.0-next.1
+
+### Minor Changes
+
+- 0b7117c: update
+
+### Patch Changes
+
+- Updated dependencies [0b7117c]
+  - @wdcthemes/babel-preset-default@2.2.0-next.1
+  - @wdcthemes/eslint-config@3.2.0-next.1
+
+## 2.1.0-next.1
 
 ### Minor Changes
 
 - 38d3935: Bump ver
-
-## 2.1.0
-
-### Minor Changes
-
-- 59ad2da: Bump versions
 
 ## 2.1.0-next.0
 
