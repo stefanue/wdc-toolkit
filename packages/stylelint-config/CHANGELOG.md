@@ -4,6 +4,17 @@
 
 ### Minor Changes
 
+- 0b7117c: update
+
+### Patch Changes
+
+- Updated dependencies [0b7117c]
+  - @wdcthemes/eslint-config@3.2.0-next.1
+
+## 7.0.0-next.1
+
+### Minor Changes
+
 - 38d3935: Bump ver
 
 ## 7.0.0-next.0
