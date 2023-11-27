@@ -1,6 +1,6 @@
 {
     "name": "@wdcthemes/eslint-config",
-    "version": "4.0.0-next.2",
+    "version": "4.0.0",
     "description": "A shareable ESLint configuration",
     "publishConfig": {
         "access": "public"
@@ -38,7 +38,7 @@
         "wdc"
     ],
     "dependencies": {
-        "@wdcthemes/babel-preset-default": "^3.0.0-next.2",
+        "@wdcthemes/babel-preset-default": "^3.0.0",
         "eslint": "^8.40.0",
         "prettier": "^2.4.1",
         "@babel/core": "^7.21.4",
