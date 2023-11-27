@@ -65,20 +65,14 @@
 		"webpack-bundle-analyzer": "^4.8.0",
 		"webpack-dev-server": "^4.15.0",
 		"webpack-sources": "^3.2.3",
-		"webpackbar": "^5.0.2"
-	},
-	"devDependencies": {
+		"webpackbar": "^5.0.2",
 		"@wdcthemes/babel-preset-default": "^2.2.0-next.0",
 		"@wdcthemes/eslint-config": "^3.2.0-next.0",
-		"@wdcthemes/stylelint-config": "^7.0.0-next.0"
-	},
-	"peerDependencies": {
+		"@wdcthemes/stylelint-config": "^7.0.0-next.0",
 		"@linaria/babel-preset": ">=4.3.3",
-		"@linaria/webpack-loader": ">=4.1.11",
-		"@wdcthemes/babel-preset-default": "^2.2.0-next.0",
-		"@wdcthemes/eslint-config": "^3.2.0-next.0",
-		"@wdcthemes/stylelint-config": "^7.0.0-next.0"
+		"@linaria/webpack-loader": ">=4.1.11"
 	},
+	"devDependencies": {},
 	"peerDependenciesMeta": {
 		"@linaria/webpack-loader": {
 			"optional": true

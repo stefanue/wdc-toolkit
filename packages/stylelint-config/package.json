@@ -1,50 +1,48 @@
 {
-    "name": "@wdcthemes/stylelint-config",
-    "version": "7.0.0-next.0",
-    "description": "WDC stylelint config for WordPress projects",
-    "main": "index.js",
-    "homepage": "https://github.com/stefanue/wdc-toolkit/tree/develop/packages/stylelint-config#readme",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/stefanue/wdc-toolkit.git",
-        "directory": "packages/stylelint-config"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "scripts": {
-        "lint": "eslint ."
-    },
-    "keywords": [
-        "stylelint",
-        "stylelint-config",
-        "wordpress",
-        "coding-standards"
-    ],
-    "files": [
-        "index.js",
-        "scss.js"
-    ],
-    "author": "Stefan Vasiljevic",
-    "license": "GPL-2.0-or-later",
-    "bugs": {
-        "url": "https://github.com/stefanue/wdc-toolkit/issues"
-    },
-    "engineStrict": true,
-    "engines": {
-        "node": "^16.0.0 || ^18.0.0 || ^20.0.0"
-    },
-    "devDependencies": {
-        "@wdcthemes/eslint-config": "^3.2.0-next.0"
-    },
-    "peerDependencies": {
-        "stylelint": "^15.0.0"
-    },
-    "dependencies": {
-        "stylelint-config-recommended": "^13.0.0",
-        "stylelint-declaration-strict-value": "^1.9.2",
-        "stylelint-order": "^6.0.3",
-        "stylelint-stylistic": "^0.4.3",
-        "stylelint-config-standard-scss": "^11.1.0"
-    }
+	"name": "@wdcthemes/stylelint-config",
+	"version": "7.0.0-next.0",
+	"description": "WDC stylelint config for WordPress projects",
+	"main": "index.js",
+	"homepage": "https://github.com/stefanue/wdc-toolkit/tree/develop/packages/stylelint-config#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stefanue/wdc-toolkit.git",
+		"directory": "packages/stylelint-config"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"lint": "eslint ."
+	},
+	"keywords": [
+		"stylelint",
+		"stylelint-config",
+		"wordpress",
+		"coding-standards"
+	],
+	"files": [
+		"index.js",
+		"scss.js"
+	],
+	"author": "Stefan Vasiljevic",
+	"license": "GPL-2.0-or-later",
+	"bugs": {
+		"url": "https://github.com/stefanue/wdc-toolkit/issues"
+	},
+	"engineStrict": true,
+	"engines": {
+		"node": "^16.0.0 || ^18.0.0 || ^20.0.0"
+	},
+	"devDependencies": {},
+	"peerDependencies": {},
+	"dependencies": {
+		"stylelint-config-recommended": "^13.0.0",
+		"stylelint-declaration-strict-value": "^1.9.2",
+		"stylelint-order": "^6.0.3",
+		"stylelint-stylistic": "^0.4.3",
+		"stylelint-config-standard-scss": "^11.1.0",
+		"@wdcthemes/eslint-config": "^3.2.0-next.0",
+		"stylelint": "^15.0.0"
+	}
 }
