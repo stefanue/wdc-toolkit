@@ -9,17 +9,22 @@
 		"url": "git+https://github.com/stefanue/wdc-toolkit.git",
 		"directory": "packages/toolkit"
 	},
-	"version": "20.0.0",
+	"version": "20.1.0",
 	"bin": {
 		"wdc-toolkit": "bin/wdc-toolkit.js"
 	},
 	"dependencies": {
 		"@babel/core": "^7.21.8",
 		"@babel/eslint-parser": "^7.21.8",
+		"@linaria/babel-preset": ">=4.3.3",
+		"@linaria/webpack-loader": ">=4.1.11",
 		"@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
 		"@svgr/webpack": "^8.0.1",
 		"@typescript-eslint/eslint-plugin": "^5.59.6",
 		"@typescript-eslint/parser": "^5.59.6",
+		"@wdcthemes/babel-preset-default": "^6.1.0",
+		"@wdcthemes/eslint-config": "^7.1.0",
+		"@wdcthemes/stylelint-config": "^10.1.0",
 		"@wordpress/dependency-extraction-webpack-plugin": "^4.16.0",
 		"@wordpress/eslint-plugin": "^13.10.0",
 		"@wordpress/jest-console": "^6.11.0",
@@ -58,6 +63,7 @@
 		"sharp": "^0.32.1",
 		"stylelint-config-standard-scss": "^11.0.0",
 		"stylelint-webpack-plugin": "^4.1.1",
+		"svg-sprite-loader": "^6.0.11",
 		"svgo": "^3.0.2",
 		"typescript": "^5.0.4",
 		"url-loader": "^4.1.1",
@@ -65,14 +71,8 @@
 		"webpack-bundle-analyzer": "^4.8.0",
 		"webpack-dev-server": "^4.15.0",
 		"webpack-sources": "^3.2.3",
-		"webpackbar": "^5.0.2",
-		"@wdcthemes/babel-preset-default": "^6.0.0",
-		"@wdcthemes/eslint-config": "^7.0.0",
-		"@wdcthemes/stylelint-config": "^10.0.0",
-		"@linaria/babel-preset": ">=4.3.3",
-		"@linaria/webpack-loader": ">=4.1.11"
+		"webpackbar": "^5.0.2"
 	},
-	"devDependencies": {},
 	"peerDependenciesMeta": {
 		"@linaria/webpack-loader": {
 			"optional": true

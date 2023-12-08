@@ -1,6 +1,6 @@
 {
 	"name": "@wdcthemes/eslint-config",
-	"version": "7.0.0",
+	"version": "7.1.0",
 	"description": "A shareable ESLint configuration",
 	"publishConfig": {
 		"access": "public"
@@ -40,7 +40,7 @@
 	"dependencies": {
 		"@babel/core": "^7.21.4",
 		"@babel/eslint-parser": "^7.21.3",
-		"@wdcthemes/babel-preset-default": "^6.0.0",
+		"@wdcthemes/babel-preset-default": "^6.1.0",
 		"@wordpress/eslint-plugin": "^14.9.0",
 		"eslint": "^8.40.0",
 		"eslint-config-airbnb": "^19.0.4",

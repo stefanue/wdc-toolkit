@@ -1,5 +1,17 @@
 <!-- Learn how to maintain this file at https://github.com/WordPress/gutenberg/tree/HEAD/packages#maintaining-changelogs. -->
 
+## 6.1.0
+
+### Minor Changes
+
+- Add SVG sprite
+
+### Patch Changes
+
+- Updated dependencies
+  - @wdcthemes/babel-preset-default@6.1.0
+  - @wdcthemes/eslint-config@7.1.0
+
 ## 6.0.0
 
 ### Major Changes

@@ -1,5 +1,16 @@
 # Changelog
 
+## 10.1.0
+
+### Minor Changes
+
+- Add SVG sprite
+
+### Patch Changes
+
+- Updated dependencies
+  - @wdcthemes/eslint-config@7.1.0
+
 ## 10.0.0
 
 ### Major Changes

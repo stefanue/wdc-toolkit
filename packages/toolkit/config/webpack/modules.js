@@ -149,8 +149,15 @@ module.exports = ({
 				].filter(Boolean),
 			},
 			{
+				// test: /\.svg$/,
+				// use: ["@svgr/webpack", "url-loader"],
 				test: /\.svg$/,
-				use: ["@svgr/webpack", "url-loader"],
+				loader: "svg-sprite-loader",
+				options: {
+					extract: true,
+					outputPath: "custom-dir/sprites/",
+					publicPath: "sprites/",
+				},
 			},
 			{
 				test: /\.css$/,

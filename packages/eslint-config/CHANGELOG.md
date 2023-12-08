@@ -1,5 +1,16 @@
 # Changelog
 
+## 7.1.0
+
+### Minor Changes
+
+- Add SVG sprite
+
+### Patch Changes
+
+- Updated dependencies
+  - @wdcthemes/babel-preset-default@6.1.0
+
 ## 7.0.0
 
 ### Major Changes

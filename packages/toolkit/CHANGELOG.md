@@ -1,5 +1,18 @@
 # Changelog
 
+## 20.1.0
+
+### Minor Changes
+
+- Add SVG sprite
+
+### Patch Changes
+
+- Updated dependencies
+  - @wdcthemes/babel-preset-default@6.1.0
+  - @wdcthemes/stylelint-config@10.1.0
+  - @wdcthemes/eslint-config@7.1.0
+
 ## 20.0.0
 
 ### Major Changes
